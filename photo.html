@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sedona</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__logo">
+      <img src="http://placehold.it/102x83" alt="City of Sedona" class="top-logo">
+    </div>
+
+    <nav class="top-nav">
+      <button type="text" class="top-nav__close">+</button>
+      <ul class="top-nav__list">
+        <li class="top-nav__item"><span>Главная</span></li>
+        <li class="top-nav__item"><a href="#">Фото и видео</a></li>
+        <li class="top-nav__item"><a href="#">Форма отзыва</a></li>
+        <li class="top-nav__item"><a href="#">HTML ACADEMY</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  Intro -->
+
+  <div class="intro">
+    <img src="http://placehold.it/320x160" class="intro__img" alt="Welcome to Sedona">
+  </div>
+
+  <!-- Preface  -->
+
+  <div class="preface">
+    <h2 class="preface__header">Фото и видео</h2>
+
+    <p class="preface__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+  </div>
+
+  <!--Photo Gallery -->
+
+  <div class="photo-row">
+    <!--    Может ли линия, разделяюшая картинки, задана как border-top к photo-row? -->
+    <div class="photo">
+      <figure class="photo-img">
+        <img src="http://placehold.it/281x281" width="281" height="281">
+      </figure>
+
+      <div class="photo-title">
+        <b class="photo-title__header"> Неродные просторы </b>
+        <p class="photo-title__author"> Автор фото: Борис</p>
+        <!--        Тут иконка like будет пседвоэлементом к количеству лайков -->
+        <div class="photo-title__likes"> 1350</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-row">
+    <div class="photo">
+      <figure class="photo-img">
+        <img src="http://placehold.it/281x281" width="281" height="281">
+      </figure>
+
+      <div class="photo-title">
+        <b class="photo-title__header"> Местная растительность</b>
+        <p class="photo-title__author"> Автор фото: Сергей</p>
+        <div class="photo-title__likes"> 143</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-row">
+    <div class="photo">
+      <figure class="photo-img">
+        <img src="http://placehold.it/281x281" width="281" height="281">
+      </figure>
+
+      <div class="photo-title">
+        <b class="photo-title__header"> Дорога на север</b>
+        <p class="photo-title__author"> Автор фото: Петр</p>
+        <div class="photo-title__likes"> 96</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-row">
+    <div class="photo">
+      <figure class="photo-img">
+        <img src="http://placehold.it/281x281" width="281" height="281">
+      </figure>
+
+      <div class="photo-title">
+        <b class="photo-title__header"> Мост дьявола</b>
+        <p class="photo-title__author"> Автор фото: Антон</p>
+        <div class="photo-title__likes"> 254</div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Вот смотри, тут как я вижу, этот блок полностью похож на блок Preface, и он же похож на блок Booking в index и на блок preface в form. По идее, у них должен быть один класс и модификаторы, верно? Как только это правильно оформить?  -->
+
+  <div class="promo">
+    <h2 class="promo__header">Все еще сомневаетесь?</h2>
+
+    <p class="promo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз</p>
+
+    <div class="promo-video">
+      <!--      Фильтр прокрутки -->
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <!-- Ползунок -->
+          <div class="toggle"></div>
+        </div>
+      </div>
+
+      <div class="repeat">
+        <!-- Кнопка повтора-->
+      </div>
+
+      <div class="subtitles">CC</div>
+
+      <div class="zoom">
+        <!--        Иконка zoom -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__header">#VisitSedona</div>
+
+      <div class="page-footer__social">
+        <div class="social-links">
+          <a href="" class="social-link social-link--twitter"></a>
+          <a href="" class="social-link social-link--facebook"></a>
+          <a href="" class="social-link social-link--youtube"></a>
+        </div>
+      </div>
+
+      <div class="page-footer__copyright">
+        Разработано
+        <a href="#" class="copyrights"><img src="http://placehold.it/27x34" alt="HTML Academy"></a>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
