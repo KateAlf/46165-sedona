@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sedona Form</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+  <div class="page-wrapper clearfix">
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/102x83" alt="City of Sedona" class="top-logo">
+      </div>
+
+      <nav class="top-nav">
+        <button type="text" class="top-nav__close">+</button>
+        <ul class="top-nav__list">
+          <li class="top-nav__item"><span>Главная</span></li>
+          <li class="top-nav__item"><a href="#">Фото и видео</a></li>
+          <li class="top-nav__item"><a href="#">Форма отзыва</a></li>
+          <li class="top-nav__item"><a href="#">HTML ACADEMY</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--  Intro -->
+
+    <div class="intro">
+      <img src="http://placehold.it/320x160" class="intro__img" alt="Welcome to Sedona" width="320" height="160">
+    </div>
+
+    <!--  Preface -->
+
+    <div class="preface">
+      <h2 class="preface__title">Оставьте свой отзыв</h2>
+
+      <p class="preface__text">Помогите нашим отелям стать лучше! Оставьт отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+
+    <!--  Form -->
+
+    <div class="feedback-form">
+      <form class="feedback" action="/echo" method="post" name="feedback-form">
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title">Представьтесь, пожалуйста:</legend>
+
+          <label for="name">Имя:</label>
+          <input type="text" id="name" placeholder="Петр" required>
+
+          <label for="last-name">Фамилия: </label>
+          <input type="text" id="last-name" placeholder="Иванов" required>
+
+          <label for="middle-name">Отчество:</label>
+          <input type="text" id="middle-name" placeholder="Александрович" required>
+        </fieldset>
+
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title">Контактная информация: </legend>
+
+          <label for="tel">Контактный телефон:</label>
+          <input type="tel" id="tel" placeholder="Введите телефон" pattern="0-9" required>
+
+          <label for="email"> Электронная почта:</label>
+          <input type="email" id="email" placeholder="Введите email" pattern="A-z" required>
+
+        </fieldset>
+
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title"> Ваше общее впечатление: </legend>
+
+          <input type="radio" id="good" checked>
+          <label for="good">Скорее положительное</label>
+
+          <input type="radio" id="bad">
+          <label for="bad">Скорее отрицательное </label>
+
+          <input type="radio" id="dunno">
+          <label for="dunno">Затрудняюсь ответить</label>
+        </fieldset>
+
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title"> Посещенные достопримечательности: </legend>
+
+          <input type="checkbox" id="bridge" checked>
+          <label for="bridge">Мост дьявола </label>
+
+          <input type="checkbox" id="slide-park" checked>
+          <label for="slide-park">Слайд парк </label>
+
+          <input type="checkbox" id="mountain">
+          <label for="mountain">Гора-Колокол </label>
+
+          <input type="checkbox" id="rocks" checked>
+          <label for="rocks">Красные скалы</label>
+        </fieldset>
+
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title"> Опишите свои эмоции: </legend>
+          <textarea class="emotions" rows="5" cols="30" required>Опишите подробно все свои восторги</textarea>
+        </fieldset>
+
+        <button type="submit" class="feedback__send">Отправить отзыв</button>
+
+      </form>
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__header">#VisitSedona</div>
+
+      <div class="social-links">
+        <a href="#" class="social-link social-link--twitter">Twitter</a>
+        <a href="#" class="social-link social-link--facebook">Facebook</a>
+        <a href="#" class="social-link social-link--youtube">Youtube</a>
+      </div>
+
+      <div class="page-footer__copyright">
+        Разработано
+        <a href="#" class="copyrights"><img src="http://placehold.it/27x34" alt="HTML Academy"></a>
+      </div>
+
+    </footer>
+
+    <!--Modal Forms - Success and Failure -->
+
+    <div class="modal-form modal-form--success">
+      <b class="modal-form__header"> Ваш отзыв отправлен</b>
+      <p class="modal-form__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте</p>
+      <button type="button" class="btn bth--close">Отправить отзыв</button>
+    </div>
+
+    <div class="modal-form modal-form--failure">
+      <b class="modal-form__header">Что-то пошло не так! </b>
+      <p class="modal-form__text">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить</p>
+      <button type="button" class="btn bth--ok">ОК</button>
+    </div>
+  </div>
+</body>
+
+</html>
