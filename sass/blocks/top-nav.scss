@@ -1,0 +1,22 @@
+.top-nav {
+  outline: 1px solid grey;
+
+  &__list {
+    background-color: $primary-color;
+    list-style: none;
+    }
+
+  &__item {
+    heigth: 54px;
+    border-bottom: 1px solid $border;
+    color: white;
+  }
+
+  &__close {
+    transform: rotate(45deg);
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    color: grey;
+    }
+}
