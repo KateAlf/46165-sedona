@@ -1,0 +1,10 @@
+.promo {
+  outline: 1px solid grey;
+  &__title{
+
+  @include title;}
+
+  &__text{
+
+  @include text;}
+}

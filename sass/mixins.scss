@@ -1,0 +1,21 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+@mixin text {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  }

@@ -1,0 +1,12 @@
+.booking {
+  outline: 1px solid grey;
+ 
+  &__title {
+    @include title;
+    font-size: 21px;
+  }
+ 
+  &__text {
+    @include text;
+  }
+}

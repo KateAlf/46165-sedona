@@ -1,0 +1,9 @@
+.preface {
+  
+  &__title {
+    @include title;
+  }
+  &__text {
+    @include text;
+  }
+}
