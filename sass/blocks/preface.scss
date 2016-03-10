@@ -1,9 +1,9 @@
 .preface {
-&__title{
-  @include title;
+  
+  &__title {
+    @include title;
   }
-
-&__text{
-  @include text;
+  &__text {
+    @include text;
   }
 }

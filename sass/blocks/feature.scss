@@ -1,41 +1,49 @@
 .feature {
-
-  &__header{
-
-  }
-
-  &__number{
-
-  }
-
-   &__text{
-
-  }
-
-
-  &--primary{
+  
+  &--primary {
     background-color: $primary-color;
   }
-
-  &--secondary{
+  
+  &--secondary {
     background-color: $secondary-color;
   }
-
+  
   &--icon {
-
+    
   }
-
   &--icon-home {
-
+    
   }
-
   &--icon-souvenirs {
-
-
+    
   }
-
   &--icon-food {
-
-
+    
   }
+  
+  &__header {
+    
+  }
+  
+  &__header--primary {
+    color: white;
+  }
+  
+  &__number {
+    
+  }
+  
+  &__number--primary {
+    color: white;
+  }
+  
+  &__text {
+    
+  }
+  
+  &__text--primary {
+    color: white;
+  }
+  
+  
 }
