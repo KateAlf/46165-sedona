@@ -8,6 +8,7 @@
 
 @import "variables.scss";
 @import "mixins.scss";
+@import "mediaquery.scss";
 @import "global/fonts.scss";
 @import "global/body.scss";
 
@@ -25,7 +26,6 @@
 @import "blocks/btn.scss";
 
 /* Page Elements */
-
 
 @import "blocks/feature.scss";
 @import "blocks/features.scss";
