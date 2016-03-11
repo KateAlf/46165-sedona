@@ -1,28 +1,24 @@
+.page-wrapper {
+  width:320px;
+  margin: 0 auto;
+  
+  @media $tablet-width {
+    width:640px;
+  }
+  
+  @media $desktop-width {
+    width:960px;
+  }
+}
+
 /* Mobile Query */
 
-@media ( max-width: 320px) {
-  .page-wrapper {
-    max-width: 300px;
-    margin: auto;
-  }
-}
-
 /* Tablet Query */
-
-@media ( min-width: 700px) {
-  .page-wrapper {
-    max-width: 500px;
-    margin: auto;
-  }
-}
 
 /* Desktop Query */
 
 @media ( min-width: 900px) {
-  .page-wrapper {
-    max-width: 1200px;
-    margin: auto;
-  }
+  
   .features__row {
     height: 260px;
   }
