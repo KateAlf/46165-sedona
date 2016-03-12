@@ -1,6 +1,24 @@
 .photo {
-  
-  &__likes {
-    
+  outline: 1px solid grey;
+  &__likes {}
+  &--primary {}
+}
+@media #{$tablet-width} {
+  .photo {
+    width: 50%;
+    float: left;
+ 
+    &--primary {
+      width: 100%;
+    }
+  }
+}
+@media #{$desktop-width} {
+  .photo {
+    width: 33.1%;
+    float: left;
+    &--primary {
+      width: 100%;
+    }
   }
 }

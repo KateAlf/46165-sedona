@@ -1,23 +1,12 @@
-.page-wrapper {
-  width: 320px;
-  margin: 0 auto;
-  
-  @media #{$tablet-width} {
-    width: 640px;
-  }
- 
-  @media #{$desktop-width} {
-    width: 1200px;
-  }
-}
+
 
 /* Mobile Query */
 
 @media #{$mobile-width} {
-  
-  .top-nav__close{
-  display: block;
-  }}
+  .top-nav__close {
+    display: block;
+  }
+}
 
 /* Tablet Query */
 
@@ -25,63 +14,3 @@
 
 /* Desktop Query */
 
-  @media #{$desktop-width}{
-    
-  .logo{
-    position: absolute;
-    top:0px;
-    left:510px;
-    }
-    
-  .top-nav {
-    
-    width:100%;
-   
-    &__list {
-    background-color: white;
-    }
-    
-    &__item{
-    
-    display: inline-block;
-    margin: 0;
-    padding:0;
-    color: black;
-    width: 20%;
-    border: none;
-    }
-    }
-  
-  .features__row {
-    height: 260px;
-  }
-  .feature {
-    float: left;
-    height: 260px;
-  }
-  .feature--primary {
-    float: left;
-    width: 31.3%;
-  }
-  .feature-picture {
-    float: right;
-    width: 62.5%;
-  }
-  .feature--icon {
-    float: left;
-    width: 31.3%;
-  }
-  .feature--secondary {
-    width: 31.3%;
-  }
-    
-  .page-footer__header,
-  .social-links {
-    width: 31.3%;
-    float: left;
-  }
-  .page-footer__copyright {
-    width: 31.3%;
-    float: right;
-  }
-}

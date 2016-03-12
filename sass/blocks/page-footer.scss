@@ -9,3 +9,27 @@
     
   }
 }
+
+@media #{$tablet-width} {
+  .page-footer__header,
+  .social-links {
+    width: 31.3%;
+    float: left;
+  }
+  .page-footer__copyright {
+    width: 31.3%;
+    float: right;
+  }
+}
+
+@media #{$desktop-width} {
+  .page-footer__header,
+  .social-links {
+    width: 31.3%;
+    float: left;
+  }
+  .page-footer__copyright {
+    width: 31.3%;
+    float: right;
+  }
+}

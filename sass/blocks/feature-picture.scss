@@ -2,5 +2,9 @@
   outline: 1px solid grey;
   margin: 0;
 }
-
-
+@media #{$desktop-width} {
+  .feature-picture {
+    float: right;
+    width: 62.5%;
+  }
+}

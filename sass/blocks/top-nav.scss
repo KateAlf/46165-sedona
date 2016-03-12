@@ -1,17 +1,14 @@
-.top-nav {
+  .top-nav {
   outline: 1px solid grey;
-
   &__list {
     background-color: $primary-color;
     list-style: none;
-    }
-
+  }
   &__item {
     height: 54px;
     border-bottom: 1px solid $border;
     color: white;
   }
-
   &__close {
     display: none;
     transform: rotate(45deg);
@@ -19,5 +16,39 @@
     background-color: transparent;
     font-size: 40px;
     color: grey;
+  }
+}
+
+@media #{$tablet-width} {
+  .top-nav {
+    width: 100%;
+    &__list {
+      background-color: white;
+    }
+    &__item {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      color: black;
+      width: 20%;
+      border: none;
+    }
+    }
+}
+
+@media #{$desktop-width} {
+  .top-nav {
+    width: 100%;
+    &__list {
+      background-color: white;
+    }
+    &__item {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      color: black;
+      width: 20%;
+      border: none;
+    }
     }
 }
