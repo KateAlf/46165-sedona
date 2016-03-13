@@ -2,21 +2,26 @@
   outline: 1px solid grey;
   &__likes {}
   &--primary {}
+  
+  
 }
 @media #{$tablet-width} {
   .photo {
-    width: 50%;
-    float: left;
- 
+    width: 49%;
+    display: inline-block;
+  
     &--primary {
       width: 100%;
     }
   }
 }
 @media #{$desktop-width} {
+ 
   .photo {
-    width: 33.1%;
-    float: left;
+    width: 33%;
+    display: inline-block;
+    font-size: 0px;
+  
     &--primary {
       width: 100%;
     }
