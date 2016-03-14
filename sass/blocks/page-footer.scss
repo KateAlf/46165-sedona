@@ -1,11 +1,19 @@
 .page-footer {
   outline: 1px solid grey;
   margin-bottom: 20px;
-  
   &__header {
-    
+    outline: 1px solid grey;
   }
-  &__copyrights {
-    
+  &__copyright {}
+}
+@media #{$tablet-width} {
+  .page-footer__header {
+    width: 31.3%;
+    float: left;
+  }
+  .page-footer__copyright {
+    width: 31.3%;
+    float: right;
   }
 }
+@media #{$desktop-width} {}

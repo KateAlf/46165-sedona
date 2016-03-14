@@ -1,0 +1,97 @@
+  .feedback-form {}
+  @media #{$tablet-width} {
+    .feedback {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .feedback-form {
+      display: flex;
+      flex-direction: row;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      outline: 1px solid grey;
+      &__group--name {
+        flex-basis: 47%;
+        order: 1;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+      &__group--general {
+        flex-basis: 47%;
+        order: 0;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      &__group--contact {
+        flex-basis: 100%;
+        order: 2;
+      }
+      &__group--sights {
+        flex-basis: 100%;
+        order: 3;
+      }
+      &__group--emo {
+        flex-basis: 100%;
+        order: 4;
+      }
+    }
+    .feedback__send {
+      order: 5;
+    }
+  }
+  @media #{$desktop-width} {
+    .feedback {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .feedback-form {
+      display: flex;
+      flex-direction: row;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      outline: 1px solid grey;
+      &__group--name {
+        flex-basis: 47%;
+        order: 1;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      &__group--general {
+        flex-basis: 47%;
+        order: 0;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      &__group--contact {
+        flex-basis: 100%;
+        order: 2;
+      }
+      &__group--sights {
+        flex-basis: 100%;
+        order: 3;
+      }
+      &__group--emo {
+        flex-basis: 100%;
+        order: 4;
+      }
+    }
+    .feedback__send {
+      order: 5;
+    }
+  }

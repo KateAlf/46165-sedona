@@ -1,4 +1,9 @@
 .social-links {
   outline: 1px solid grey;
-
+}
+@media #{$tablet-width} {
+  .social-links {
+    width: 31.3%;
+    float: left;
+  }
 }

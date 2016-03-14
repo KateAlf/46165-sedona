@@ -1,10 +1,16 @@
 .promo {
   outline: 1px solid grey;
-  &__title{
-
-  @include title;}
-
-  &__text{
-
-  @include text;}
+  width: 100%;
+  &__title {
+    @include title;
+  }
+  &__text {
+    @include text;
+  }
 }
+@media #{$tablet-width} {
+  .promo {
+    width: 100%;
+  }
+}
+@media #{$desktop-width} {}

@@ -10,20 +10,20 @@
 
 <body>
   <div class="page-wrapper clearfix">
-     <header class="page-header">
+    <header class="page-header">
       <button type="button" class="top-nav__close">+</button>
 
       <nav class="top-nav">
         <ul class="top-nav__list">
-          <li class="top-nav__item"><a href="#" class="top-nav__link--active">Главная</a></li>
-          <li class="top-nav__item"><a href="#" class="top-nav__link">Фото и видео</a></li>
+          <li class="top-nav__item"><a href="index.html" class="top-nav__link--active">Главная</a></li>
+          <li class="top-nav__item"><a href="photo.html" class="top-nav__link">Фото и видео</a></li>
           <li class="top-nav__item"><a class="top-nav__link">Форма отзыва</a></li>
           <li class="top-nav__item"><a href="#" class="top-nav__link">HTML ACADEMY</a></li>
         </ul>
       </nav>
 
       <div class="logo">
-        <img src="http://placehold.it/102x83" alt="City of Sedona" class="top-logo">
+        <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" class="top-logo">
       </div>
     </header>
 
@@ -38,14 +38,14 @@
     <div class="preface">
       <h2 class="preface__title">Оставьте свой отзыв</h2>
 
-      <p class="preface__text">Помогите нашим отелям стать лучше! Оставьт отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="preface__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
 
     <!--  Form -->
 
-    <div class="feedback-form">
-      <form class="feedback" action="/echo" method="post" name="feedback-form">
-        <fieldset class="feedback-form__group">
+    <div class="feedback">
+      <form class="feedback-form" action="/echo" method="post" name="feedback-form">
+        <fieldset class="feedback-form__group feedback-form__group--name">
           <legend class="feedback-form__title">Представьтесь, пожалуйста:</legend>
 
           <label for="name">Имя:</label>
@@ -58,7 +58,7 @@
           <input type="text" id="middle-name" placeholder="Александрович" required>
         </fieldset>
 
-        <fieldset class="feedback-form__group">
+        <fieldset class="feedback-form__group feedback-form__group--contact">
           <legend class="feedback-form__title">Контактная информация: </legend>
 
           <label for="tel">Контактный телефон:</label>
@@ -69,7 +69,7 @@
 
         </fieldset>
 
-        <fieldset class="feedback-form__group">
+        <fieldset class="feedback-form__group feedback-form__group--general">
           <legend class="feedback-form__title"> Ваше общее впечатление: </legend>
 
           <input type="radio" id="good" checked>
@@ -82,7 +82,7 @@
           <label for="dunno">Затрудняюсь ответить</label>
         </fieldset>
 
-        <fieldset class="feedback-form__group">
+        <fieldset class="feedback-form__group feedback-form__group--sights">
           <legend class="feedback-form__title"> Посещенные достопримечательности: </legend>
 
           <input type="checkbox" id="bridge" checked>
@@ -98,7 +98,7 @@
           <label for="rocks">Красные скалы</label>
         </fieldset>
 
-        <fieldset class="feedback-form__group">
+        <fieldset class="feedback-form__group feedback-form__group--emo">
           <legend class="feedback-form__title"> Опишите свои эмоции: </legend>
           <textarea class="emotions" rows="5" cols="30" required>Опишите подробно все свои восторги</textarea>
         </fieldset>
