@@ -13,9 +13,4 @@
     width: 100%;
   }
 }
-
-@media #{$desktop-width} {
-  .promo {
-    width: 100%;
-  }
-}
+@media #{$desktop-width} {}

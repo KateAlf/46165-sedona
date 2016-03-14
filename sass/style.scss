@@ -1,5 +1,6 @@
 /* Compiled SCSS File with all *.scss files */
 
+
 /* VENDOR */
 
 @import "normalize.scss";
@@ -10,7 +11,6 @@
 @import "mixins.scss";
 @import "global/fonts.scss";
 @import "global/body.scss";
-
 
 /* Framework */
 
@@ -36,6 +36,8 @@
 @import "blocks/photo-row.scss";
 @import "blocks/photo.scss";
 @import "blocks/promo.scss";
+@import "blocks/feedback-form.scss";
 @import "blocks/booking.scss";
 @import "blocks/map.scss";
 @import "blocks/social-links.scss";
+@import "blocks/modal-form";

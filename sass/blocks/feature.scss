@@ -24,42 +24,37 @@
     color: white;
   }
 }
-
 @media #{$tablet-width} {
   .feature {
     float: left;
     height: 260px;
-  }
-  .feature--primary {
-    float: left;
-    width: 31.3%;
-  }
- 
-  .feature--icon {
-    float: left;
-    width: 31.3%;
-  }
-  .feature--secondary {
-    width: 31.3%;
+    &--primary {
+      float: left;
+      width: 31.3%;
+    }
+    &--icon {
+      float: left;
+      width: 31.3%;
+    }
+    &--secondary {
+      width: 31.3%;
+    }
   }
 }
-
-
 @media #{$desktop-width} {
   .feature {
     float: left;
     height: 260px;
-  }
-  .feature--primary {
-    float: left;
-    width: 31.3%;
-  }
- 
-  .feature--icon {
-    float: left;
-    width: 31.3%;
-  }
-  .feature--secondary {
-    width: 31.3%;
+    &--primary {
+      float: left;
+      width: 31.3%;
+    }
+    &--icon {
+      float: left;
+      width: 31.3%;
+    }
+    &--secondary {
+      width: 31.3%;
+    }
   }
 }

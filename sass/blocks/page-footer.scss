@@ -1,18 +1,13 @@
 .page-footer {
   outline: 1px solid grey;
   margin-bottom: 20px;
-  
   &__header {
-  outline: 1px solid grey;
+    outline: 1px solid grey;
   }
-  &__copyright {
-    
-  }
+  &__copyright {}
 }
-
 @media #{$tablet-width} {
-  .page-footer__header,
-  .social-links {
+  .page-footer__header {
     width: 31.3%;
     float: left;
   }
@@ -21,15 +16,4 @@
     float: right;
   }
 }
-
-@media #{$desktop-width} {
-  .page-footer__header,
-  .social-links {
-    width: 31.3%;
-    float: left;
-  }
-  .page-footer__copyright {
-    width: 31.3%;
-    float: right;
-  }
-}
+@media #{$desktop-width} {}
