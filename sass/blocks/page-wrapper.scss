@@ -1,11 +1,11 @@
 .page-wrapper {
-  outline: 1px solid black;
   width: 320px;
   margin: 0 auto;
   @media #{$tablet-width} {
-    width: 768px;
+  width: 768px;
   }
   @media #{$desktop-width} {
     width: 1200px;
+    box-shadow: 0px 5px 15px 0.00px rgba(0, 1, 1, 0.2);
   }
 }

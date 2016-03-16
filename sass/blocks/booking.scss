@@ -1,12 +1,33 @@
 .booking {
-  outline: 1px solid grey;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   &__title {
     @include title;
     font-size: 21px;
   }
- 
   &__text {
     @include text;
+    padding-bottom: 40px;
+  }
+}
+@media #{$mobile-width} {
+  .booking {
+    min-height: 288px;
+  }
+}
+@media #{$tablet-width} {
+  .booking {
+    min-height: 318px;
+    width: 33.9%;
+  }
+}
+//Почему-то именно на этом размере блок сдвигается немного влево от центра, причем иногда при обновлении сам возвращается на место. В чем причина может быть?
+@media #{$desktop-width} {
+  .booking {
+    min-height: 330px;
+    width: 33.9%;
   }
 }

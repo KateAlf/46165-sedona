@@ -1,9 +1,0 @@
-.feedback-form {
-
-}
-
-@media #{$tablet-width} {
-.feedback-form {
-
-}
-}
