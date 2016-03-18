@@ -1,8 +1,27 @@
 .preface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 190px;
   &__title {
     @include title;
+    font-size: 18px;
   }
   &__text {
     @include text;
+    width: 90%
+  }
+}
+@media #{$tablet-width} {
+  .preface {
+    min-height: 250px;
+    &__title {
+      @include title;
+      font-size: 30px;
+    }
+    &__text {
+      width: 37%;
+    }
   }
 }

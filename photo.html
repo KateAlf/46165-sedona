@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona Photo</title>
-  <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
@@ -46,58 +45,58 @@
 
     <div class="photo-row">
       <div class="photo photo--primary">
-        <figure class="photo-img photo--primary">
-          <img src="http://placehold.it/281x281" width="281" height="281">
-          <figcaption class="photo-img__caption">
-            Неродные просторы
-            <p class="photo-img__author"> Автор фото: Борис</p>
+        <figure class="photo-figure photo--primary">
+          <img src="img/photo-1-mobile.jpg" class="photo-figure--img" width="281" height="281">
+          <figcaption>
+            <p class="photo-figure__caption">
+              Неродные просторы </p>
+            <p class="photo-figure__author"> Автор фото: Борис</p>
           </figcaption>
         </figure>
 
         <!--   SVG-icon Like -->
-        <div class="photo-title__likes"> 1350</div>
+        <div class="likes"> 1350</div>
       </div>
     </div>
 
     <div class="photo-row">
       <div class="photo">
-        <figure class="photo-img">
-          <img src="http://placehold.it/281x281" width="281" height="281">
-          <figcaption class="photo-img__caption">
-            Местная растительность
-            <p class="photo-img__author"> Автор фото: Сергей</p>
+        <figure class="photo-figure">
+          <img src="img/photo-2-mobile.jpg" class="photo-img" width="281" height="281">
+          <figcaption>
+            <p class="photo-figure__caption">
+              Местная растительность</p>
+            <p class="photo-figure__author"> Автор фото: Сергей</p>
           </figcaption>
         </figure>
 
-        <div class="photo-title__likes"> 143</div>
-      </div>
-      <!--
-    </div>
-
-    <div class="photo-row">
--->
-      <div class="photo">
-        <figure class="photo-img">
-          <img src="http://placehold.it/281x281" width="281" height="281">
-          <figcaption class="photo-img__caption">
-            Дорога на север
-            <p class="photo-img__author"> Автор фото: Петр</p>
-          </figcaption>
-        </figure>
-
-        <div class="photo-title__likes"> 96</div>
+        <div class="likes"> 143</div>
       </div>
 
       <div class="photo">
-        <figure class="photo-img">
-          <img src="http://placehold.it/281x281" width="281" height="281">
-          <figcaption class="photo-img__caption">
-            Мост дьявола
-            <p class="photo-img__author"> Автор фото: Антон</p>
+        <figure class="photo-figure">
+          <img src="img/photo-3-mobile.jpg" class="photo-img" width="281" height="281">
+          <figcaption>
+            <p class="photo-figure__caption">
+              Дорога на север </p>
+            <p class="photo-figure__author"> Автор фото: Петр</p>
           </figcaption>
         </figure>
 
-        <div class="photo-title__likes"> 254</div>
+        <div class="likes"> 96</div>
+      </div>
+
+      <div class="photo">
+        <figure class="photo-figure">
+          <img src="img/photo-4-mobile.jpg" class="photo-img" width="281" height="281">
+          <figcaption>
+            <p class="photo-figure__caption">
+              Мост дьявола </p>
+            <p class="photo-figure__author"> Автор фото: Антон</p>
+          </figcaption>
+        </figure>
+
+        <div class="likes"> 254</div>
       </div>
     </div>
 
@@ -108,29 +107,20 @@
 
       <div class="promo-video">
         <!--      Фильтр прокрутки -->
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <!-- Ползунок -->
-            <div class="toggle"></div>
-          </div>
+        <div class="promo-video__range-filter">
+          <div class="promo-video__scale"></div>
+          <div class="promo-video__toggle"></div>
         </div>
 
-        <div class="repeat">
-          <button type="button" class="btn-repeat"> Repeat </button>
-        </div>
 
-        <div class="subtitles">
-          <button type="button" class="btn-subtitles"> CC </button>
-        </div>
-
-        <div class="zoom">
-          <button type="button" class="btn-zoom"> Zoom </button>
+        <div class="promo-video__buttons">
+          <button type="button" class="btn--repeat"></button>
+          <button type="button" class="btn--subtitles"></button>
+          <button type="button" class="btn--zoom"></button>
         </div>
       </div>
     </div>
+
 
     <footer class="page-footer">
       <div class="page-footer__header">#VisitSedona</div>
@@ -149,4 +139,5 @@
     </footer>
   </div>
 </body>
+
 </html>

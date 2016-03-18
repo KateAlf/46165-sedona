@@ -1,17 +1,34 @@
 .photo {
-  outline: 1px solid grey;
-  &__likes {}
-  &--primary {}
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
+
+@media #{$mobile-width} {
+  .photo {
+    border-top: 1px solid #e5e5e5;
+    flex-wrap: wrap;
+    
+  }
+}
+
 @media #{$tablet-width} {
   .photo {
-    width: 49%;
-    display: inline-block;
+    outline: 1px solid grey;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    
     &--primary {
+      outline: 1px solid grey;
       width: 100%;
     }
   }
 }
+
 @media #{$desktop-width} {
   .photo {
     width: 33%;
@@ -22,3 +39,7 @@
     }
   }
 }
+/*   Разделы формы, поля и подписи формы на странице отзыва;
+  Раскладка фотографий на странице «Фото и видео»;
+  Блок описания фотографии (название, автор, лайки) на странице «Фото и видео»;
+  Видеоплеер на странице «Фото и видео». */

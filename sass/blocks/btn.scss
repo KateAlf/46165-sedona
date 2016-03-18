@@ -16,6 +16,29 @@
   }
   &:active {
     background-color: $primary-color-active;
-    color:rgba(255, 255, 255, 0.302);
+    color: rgba(255, 255, 255, 0.302);
+  }
+  &--repeat {
+    width: 16px;
+    height: 20px;
+    border: 0;
+    margin-right: 133px;
+    background-image: url("../img/icon-video-replay.svg");
+  }
+  &--subtitles {
+    display: block;
+    width: 32px;
+    height: 20px;
+    margin-right: 30px;
+    border: 0;
+    background-image: url("../img/icon-video-subtitles.svg");
+  }
+  &--zoom {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 23px;
+    border: 0;
+    background-image: url("../img/icon-video-fullscreen.svg");
   }
 }

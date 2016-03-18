@@ -1,0 +1,86 @@
+  .promo-video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 267px;
+    background: url('../img/video-mobile.jpg') no-repeat;
+    &__range-filter {
+      display: block;
+      width: 87.5%;
+      height: 45px;
+      margin-top: 156px;
+      background-color: black;
+      opacity: 0.6;
+      position: relative;
+    }
+    &__scale {
+      position: absolute;
+      top: 22px;
+      left: 20px;
+      width: 85%;
+      height: 3px;
+      background-color: #fff;
+      opacity: 0.2;
+    }
+    &__toggle {
+      position: absolute;
+      top: 18px;
+      left: 77px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 87.5%;
+      min-height: 66px;
+      background-color: #f2f2f2;
+    }
+    @media #{$tablet-width} {
+       &__scale {
+      position: absolute;
+      top: 22px;
+      left: 20px;
+      width: 85%;
+      height: 3px;
+      background-color: #fff;
+      opacity: 0.2;
+    }
+    &__toggle {
+      position: absolute;
+      top: 18px;
+      left: 77px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 87.5%;
+      min-height: 66px;
+      background-color: #f2f2f2;
+    }
+      &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 87.5%;
+        min-height: 66px;
+        background-color: #f2f2f2;
+      }
+    }
+  }
