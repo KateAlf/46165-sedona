@@ -7,8 +7,16 @@
 }
 
 @media #{$mobile-width} {
-  .photo-row{
-  flex-direction: column;
-  flex-wrap: wrap;
+  .photo-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media #{$desktop-width} {
+  .photo-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
