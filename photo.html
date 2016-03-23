@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona Photo</title>
-  <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
@@ -16,8 +15,8 @@
 
       <nav class="top-nav">
         <ul class="top-nav__list">
-          <li class="top-nav__item"><a href="index.html" class="top-nav__link--active">Главная</a></li>
-          <li class="top-nav__item"><a class="top-nav__link">Фото и видео</a></li>
+          <li class="top-nav__item"><a href="index.html" class="top-nav__link">Главная</a></li>
+          <li class="top-nav__item"><a class="top-nav__link top-nav__link--active">Фото и видео</a></li>
           <li class="top-nav__item"><a href="form.html" class="top-nav__link">Форма отзыва</a></li>
           <li class="top-nav__item"><a href="#" class="top-nav__link">HTML ACADEMY</a></li>
         </ul>
@@ -46,113 +45,78 @@
 
     <div class="photo-row">
       <div class="photo photo--primary">
-        <figure class="photo-img photo--primary">
-          <img src="http://placehold.it/281x281" width="281" height="281">
-          <figcaption class="photo-img__caption">
-            Неродные просторы
-            <p class="photo-img__author"> Автор фото: Борис</p>
-          </figcaption>
-        </figure>
-
-        <!--   SVG-icon Like -->
-        <div class="photo-title__likes"> 1350</div>
+        <img src="img/photo-1-mobile.jpg" class="photo-img" width="281" height="281">
+        <div class="photo-info">
+          <div class="photo-info__caption">Неродные просторы </div>
+          <div class="photo-info__author"> Автор фото: Борис</div>
+          <div class="photo-info__likes">1350</div>
+        </div>
       </div>
-    </div>
 
-    <div class="photo-row">
       <div class="photo">
-        <figure class="photo-img">
-          <img src="http://placehold.it/281x281" width="281" height="281">
-          <figcaption class="photo-img__caption">
-            Местная растительность
-            <p class="photo-img__author"> Автор фото: Сергей</p>
-          </figcaption>
-        </figure>
-
-        <div class="photo-title__likes"> 143</div>
+        <img src="img/photo-2-mobile.jpg" class="photo-img" width="281" height="281">
+        <div class="photo-info">
+          <div class="photo-info__caption">Местная растительность</div>
+          <div class="photo-info__author"> Автор фото: Сергей</div>
+          <div class="photo-info__likes"> 143</div>
+        </div>
       </div>
-      <!--
-    </div>
 
-    <div class="photo-row">
--->
       <div class="photo">
-        <figure class="photo-img">
-          <img src="http://placehold.it/281x281" width="281" height="281">
-          <figcaption class="photo-img__caption">
-            Дорога на север
-            <p class="photo-img__author"> Автор фото: Петр</p>
-          </figcaption>
-        </figure>
 
-        <div class="photo-title__likes"> 96</div>
+        <img src="img/photo-3-mobile.jpg" class="photo-img" width="281" height="281">
+        <div class="photo-info">
+          <div class="photo-info__caption">Дорога на север </div>
+          <div class="photo-info__author"> Автор фото: Петр</div>
+          <div class="photo-info__likes"> 96</div>
+        </div>
       </div>
-      <!--
-    </div>
 
-
-    <div class="photo-row">
--->
       <div class="photo">
-        <figure class="photo-img">
-          <img src="http://placehold.it/281x281" width="281" height="281">
-          <figcaption class="photo-img__caption">
-            Мост дьявола
-            <p class="photo-img__author"> Автор фото: Антон</p>
-          </figcaption>
-        </figure>
-
-        <div class="photo-title__likes"> 254</div>
+        <img src="img/photo-4-mobile.jpg" class="photo-img" width="281" height="281">
+        <div class="photo-info">
+          <div class="photo-info__caption">Мост дьявола </div>
+          <div class="photo-info__author">Автор фото: Антон</div>
+          <div class="photo-info__likes">254</div>
+        </div>
       </div>
     </div>
+      <div class="promo">
+        <h2 class="promo__title">Все еще сомневаетесь?</h2>
 
-    <div class="promo">
-      <h2 class="promo__title">Все еще сомневаетесь?</h2>
+        <p class="promo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз</p>
 
-      <p class="promo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз</p>
+        <div class="promo-video">
+          <!--      Фильтр прокрутки -->
+          <div class="promo-video__range-filter">
+            <div class="promo-video__scale"></div>
+            <div class="promo-video__toggle"></div>
+          </div>
 
-      <div class="promo-video">
-        <!--      Фильтр прокрутки -->
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <!-- Ползунок -->
-            <div class="toggle"></div>
+
+          <div class="promo-video__buttons">
+            <button type="button" class="btn--repeat"></button>
+            <button type="button" class="btn--subtitles"></button>
+            <button type="button" class="btn--zoom"></button>
           </div>
         </div>
-
-        <div class="repeat">
-          <button type="button" class="btn-repeat"> Repeat </button>
-        </div>
-
-        <div class="subtitles">
-          <button type="button" class="btn-subtitles"> CC </button>
-        </div>
-
-        <div class="zoom">
-          <button type="button" class="btn-zoom"> Zoom </button>
-        </div>
       </div>
+
+      <footer class="page-footer">
+        <div class="page-footer__header">#VisitSedona</div>
+
+        <div class="social-links">
+          <a href="#" class="social-link social-link--twitter">Twitter</a>
+          <a href="#" class="social-link social-link--facebook">Facebook</a>
+          <a href="#" class="social-link social-link--youtube">Youtube</a>
+        </div>
+
+        <div class="page-footer__copyright">
+          Разработано
+          <a href="#" class="copyrights"><img src="http://placehold.it/27x34" alt="HTML Academy"></a>
+        </div>
+
+      </footer>
     </div>
-
-    <footer class="page-footer">
-      <div class="page-footer__header">#VisitSedona</div>
-
-      <div class="social-links">
-        <a href="#" class="social-link social-link--twitter">Twitter</a>
-        <a href="#" class="social-link social-link--facebook">Facebook</a>
-        <a href="#" class="social-link social-link--youtube">Youtube</a>
-      </div>
-
-      <div class="page-footer__copyright">
-        Разработано
-        <a href="#" class="copyrights"><img src="http://placehold.it/27x34" alt="HTML Academy"></a>
-      </div>
-
-    </footer>
-  </div>
 </body>
-
 </html>

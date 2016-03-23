@@ -1,66 +1,180 @@
+@media #{$mobile-width} {
   .top-nav {
-    outline: 1px solid grey;
+    display: none;
+    position: relative;
+//    display: block;
+    margin-bottom: 56px;
     &__list {
-      background-color: $primary-color;
+      padding: 0;
+      margin: 0;
       list-style: none;
+    }
+    &__list > li:first-child:hover,
+    &__list > li:first-child:active {
+      background-color: $primary-color;
+      cursor: default;
     }
     &__item {
       height: 54px;
-      border-bottom: 1px solid $border;
       color: white;
+      font-size: 18px;
+      line-height: 56px;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 1px solid $border;
+      background-color: $primary-color;
+    }
+    &__item:hover {
+      background-color: $primary-color-hover;
+      cursor: pointer;
+    }
+    &__item:active {
+      background-color: $primary-color-active;
+    }
+    &__item:active .top-nav__link {
+      opacity: 0.3;
+    }
+    &__link,
+    &__link--active {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    &__link--active:hover {
+      cursor: default;
+    }
+    &__link:hover,
+    &__link--active:hover,
+    &__link:active,
+    &__link--active:active,
+    &__link:visited {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    &__link:active {
+      opacity: 0.3;
     }
     &__close {
+      position: absolute;
+      top: -15px;
+      right: 15px;
+      z-index: 10;
       display: none;
-      transform: rotate(45deg);
+      font-size: 60px;
+      color: white;
       border: none;
       background-color: transparent;
-      font-size: 40px;
-      color: grey;
+      transform: rotate(45deg);
+    }
+    &__open,
+    &__open:before,
+    &__open:after {
+      position: absolute;
+      top: 245px;
+      right: 30px;
+      z-index: 10;
+      display: block;
+      width: 23px;
+      height: 4px;
+      background-color: $primary-color;
+      border: none;
+      content: '';
+      cursor: pointer;
+    }
+    &__open:before {
+      top: 8px;
+      right: 0px;
+    }
+    &__open:after {
+      top: -8px;
+      right: 0px;
+    }
+    &__open:active .top-nav {
+      display: block;
+    }
+    &__close:active .top-nav {
+      display: none;
     }
   }
-  @media #{$tablet-width} {
-    .top-nav {
-      width: 100%;
-      &__list {
-        background-color: white;
-        font-size: 0px;
-      }
-      &__item {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        color: black;
-        width: 19%;
-        border: none;
-        font-size: 14px;
-        line-height: 56px;
-        text-align: center;
-      }
-      &__item:nth-child(2) {
-        margin-right: 20.3%;
-      }
+}
+@media #{$tablet-width} {
+  .top-nav {
+     width: 100%;
+    &__list {
+      background-color: white;
+      font-size: 0px;
+      padding: 0;
+      margin: 0;
+    }
+    &__item {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 19%;
+      border: none;
+      font-size: 14px;
+      line-height: 56px;
+      text-align: center;
+    }
+    &__item:nth-child(2) {
+      margin-right: 20.3%;
+    }
+    &__close,
+    &__open {
+      display: none;
+    }
+    
+     &__link {
+      color: black;
+      text-decoration: none;
+    }
+    &__link:hover {
+      color: $primary-color;
+    }
+    &__link:active {
+      color: black;
+      opacity: 0.3;
+    }
+    &__link--active {
+      color: $link-color;
+      text-decoration: none;
+    }
+    &__link--active:hover {
+      color: $link-color-hover;
+      cursor: default;
+    }
+    &__link--active:active {
+      color: $link-color;
+      opacity: 0.3;
     }
   }
-  @media #{$desktop-width} {
-    .top-nav {
-      width: 100%;
-      &__list {
-        background-color: white;
-        font-size: 0px;
-      }
-      &__item {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        color: black;
-        width: 20%;
-        border: none;
-        font-size: 14px;
-        line-height: 56px;
-        text-align: center;
-      }
-      &__item:nth-child(2) {
-        margin-right: 20%;
-      }
+}
+@media #{$desktop-width} {
+  .top-nav {
+    width: 100%;
+    &__list {
+      background-color: white;
+      font-size: 0px;
     }
+    &__item {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      color: black;
+      font-size: 14px;
+      line-height: 56px;
+      text-align: center;
+      border: none;
+    }
+    &__item:nth-child(2) {
+      margin-right: 20%;
+    }
+   
   }
+}

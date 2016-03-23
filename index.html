@@ -12,7 +12,11 @@
 <body>
   <div class="page-wrapper clearfix">
     <header class="page-header">
-      <button type="button" class="top-nav__close">+</button>
+      <button class="hamburger hamburger-cross" type="button">
+        <span class="hamburger--box">
+          </span>
+      </button>
+
 
       <nav class="top-nav">
         <ul class="top-nav__list">
@@ -31,7 +35,7 @@
     <!--  Intro -->
 
     <div class="intro">
-      <img src="http://placehold.it/320x389" class="intro__img" alt="Welcome to Sedona" width="320" height="389">
+      <img src="img/bg-triangle.svg" class="intro__img" alt="Welcome to Sedona" width="320" height="154">
     </div>
 
     <!--  Sedona Features -->
@@ -45,60 +49,61 @@
       <div class="features__row">
         <div class="feature feature--primary">
           <b class="feature__header feature__header--primary">Настоящий городок</b>
-          <div class="feature__number feature__number--primary">№1</div>
+          <div class="feature__number feature__number--primary">&ndash; №1 &ndash;</div>
           <p class="feature__text feature__text--primary">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
 
         <figure class="feature-picture">
-          <img src="http://placehold.it/320x260" alt="Причина 1" width="320" height="260">
+          <img src="img/photo-city.jpg" alt="Причина 1" width="320" height="260">
         </figure>
       </div>
 
       <div class="features__row">
         <div class="feature feature--icon feature--icon-home">
-          <b class="feature__title">Жилье</b>
+          <b class="feature__header">Жилье</b>
           <p class="feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
 
         <div class="feature feature--icon feature--icon-souvenirs">
-          <b class="feature__title">Сувениры</b>
+          <b class="feature__header">Сувениры</b>
           <p class="feature__text">Не только китайского, но и местного производства!</p>
         </div>
 
         <div class="feature feature--icon feature--icon-food">
-          <b class="feature__title">Еда</b>
+          <b class="feature__header">Еда</b>
           <p class="feature__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
       </div>
 
       <div class="features__row">
+       <figure class="feature-picture">
+          <img src="img/photo-bridge.jpg" alt="Причина 2" height="260" width="320">
+        </figure>
         <div class="feature feature--primary">
           <b class="feature__header feature__header--primary">Там есть мост дьявола</b>
-          <div class="feature__number feature__number--primary">№2</div>
-          <p class="feature__text feature__text--primary">Да, по нему можно пройти! Если вы конечно осмелитесь</p>
+          <div class="feature__number feature__number--primary">&ndash; №2 &ndash;</div>
+          <p class="feature__text feature__text--primary">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
 
-        <figure class="feature-picture">
-          <img src="http://placehold.it/320x260" alt="Причина 2">
-        </figure>
+        
       </div>
 
       <div class="features__row">
         <div class="feature feature--secondary">
           <b class="feature__header">Небольшая площадь</b>
-          <div class="feature__number">№3</div>
+          <div class="feature__number">&ndash; №3 &ndash;</div>
           <p class="feature__text">Все достопримечательности находятся очень близко</p>
         </div>
 
         <div class="feature feature--secondary">
           <b class="feature__header">Красивая дорога</b>
-          <div class="feature__number">№4</div>
+          <div class="feature__number">&ndash; №4 &ndash;</div>
           <p class="feature__text">Ехать в седону из Лас-Вегаса совсем не скучно</p>
         </div>
 
         <div class="feature feature--secondary">
           <b class="feature__header">Мало туристов</b>
-          <div class="feature__number">№5</div>
+          <div class="feature__number">&ndash; №5 &ndash;</div>
           <p class="feature__text">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </div>
@@ -108,7 +113,7 @@
     <div class="booking">
       <h2 class="booking__title">Заинтересовались?</h2>
 
-      <p class="booking__text">Укажите предполагаемые даты поездки и мы покажем вам лучше предложения гостиниц в Седоне</p>
+      <p class="booking__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
       <a class="btn btn--booking" href="#"> Найти гостиницу </a>
 
@@ -127,7 +132,7 @@
 
       <div class="page-footer__copyright">
         Разработано
-        <a href="#" class="copyrights"><img src="http://placehold.it/27x34" alt="HTML Academy"></a>
+        <a href="#"><img class="copyrights" src="img/logo-htmlacademy.svg" alt="HTML Academy" height="34" width="27"></a>
       </div>
 
     </footer>

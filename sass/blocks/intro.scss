@@ -1,6 +1,11 @@
 .intro {
-  
+  width: 100%;
+  min-height: 389px;
+  background-image: url('../img/bg-back-mobile.jpg');
+  background-position: center;
+//  position: relative;
   &__img {
-    
+//  position:absolute;
+//  bottom: 0;
   }
 }

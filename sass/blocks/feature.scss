@@ -1,60 +1,84 @@
-.feature {
-  &--primary {
-    background-color: $primary-color;
-  }
-  &--secondary {
-    background-color: $secondary-color;
-  }
-  &--icon {
-    outline: 1px solid grey;
-  }
-  &--icon-home {}
-  &--icon-souvenirs {}
-  &--icon-food {}
-  &__header {}
-  &__header--primary {
-    color: white;
-  }
-  &__number {}
-  &__number--primary {
-    color: white;
-  }
-  &__text {}
-  &__text--primary {
-    color: white;
-  }
-}
-@media #{$tablet-width} {
   .feature {
-    float: left;
-    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &--primary {
-      float: left;
-      width: 31.3%;
-    }
-    &--icon {
-      float: left;
-      width: 31.3%;
+      background-color: $primary-color;
+      min-height: 208px;
     }
     &--secondary {
-      width: 31.3%;
+      background-color: $secondary-color;
+      min-height: 208px;
+    }
+    &__header {
+      @include title;
+      line-height: 36px;
+    }
+    &__header--primary {
+      color: white;
+    }
+    &__number,
+    ,
+    &__text {
+      @include text;
+      width: 80%;
+    }
+    &__number--primary,
+    &__text--primary {
+      color: white;
+      @include text;
     }
   }
-}
-@media #{$desktop-width} {
-  .feature {
-    float: left;
-    height: 260px;
-    &--primary {
-      float: left;
-      width: 31.3%;
-    }
-    &--icon {
-      float: left;
-      width: 31.3%;
-    }
-    &--secondary {
-      width: 31.3%;
+  @media #{$mobile-width} {
+    .feature {
+      &--primary {
+        min-height: 208px;
+      }
+      &--icon {
+        min-height: 138px;
+        align-items: flex-start;
+        padding-left: 70px;
+      }
+      &--icon .feature__text {
+        text-align: left;
+      }
+      &--icon-home {}
+      &--icon-souvenirs {}
+      &--icon-food {}
     }
   }
-}
+  @media #{$tablet-width} {
+    .feature {
+      float: left;
+      height: 260px;
+      &--primary {
+        float: left;
+        width: 31.3%;
+      }
+      &--icon {
+        float: left;
+        width: 33.3%;
+      }
+      &--secondary {
+        width: 33.3%;
+      }
+    }
+  }
+  @media #{$desktop-width} {
+    .feature {
+      float: left;
+      min-height: 260px;
+      &--primary {
+        float: left;
+        width: 33.3%;
+      }
+      &--icon {
+        float: left;
+        width: 33.3%;
+      }
+      &--secondary {
+        width: 33.3%;
+      }
+    }
+  }

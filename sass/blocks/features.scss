@@ -1,22 +1,71 @@
-.features {
-  outline: 1px solid grey;
-  &__header {
-    outline: 1px solid grey;
+  .features {
+    
+    &__title {
+      @include title;
+      font-size: 21px;
+    }
+    
+    &__text {
+      @include text;
+    }
   }
-  &__title {
-    outline: 1px solid grey;
-    @include title;
-    font-size: 21px;
+
+  @media #{$mobile-width} {
+    .features {
+      &__header {
+      margin-top: 45px;
+      margin-bottom: 35px;
+      position: relative;
+    }
+      &__header:after {
+        position: absolute;
+        top: 165px;
+        right: 0px;
+        content: '';
+        display: block;
+        border: 160px solid transparent;
+        border-top: 16px solid white;
+        width: 0;
+        height: 0;
+      }
+    }
   }
-  &__text {
-    @include text;
+@media #{$tablet-width} {
+    .features {
+      &__header {
+        margin-top: 50px;
+        margin-bottom: 55px;
+       
+      }
+      &__title {
+        @include title;
+        font-size: 21px;
+      }
+      &__text {
+        @include text;
+      }
+      &__row {
+        min-height: 260px;
+      }
+    }
   }
-  &__row {
-    outline: 1px solid grey;
+
+  @media #{$desktop-width} {
+    .features {
+      &__header {
+        margin-top: 50px;
+        margin-bottom: 60px;
+       
+      }
+      &__title {
+        @include title;
+        font-size: 21px;
+      }
+      &__text {
+        @include text;
+      }
+      &__row {
+        min-height: 260px;
+      }
+    }
   }
-}
-@media #{$desktop-width} {
-  .features__row {
-    height: 260px;
-  }
-}

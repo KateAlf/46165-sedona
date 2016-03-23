@@ -1,24 +1,4 @@
 .photo-img {
-  &__caption {}
-  &__author {}
-}
+  width: 100%;
 
-@media #{$tablet-width} {
-  
-  .photo-img {
-    width: 50%;
-  }
-  &--primary {
-    width: 100%;
-  }
-}
-
-
-@media #{$desktop-width} {
-  .photo-img {
-    width: 33%;
-  }
-  &--primary {
-    width: 100%;
-  }
 }

@@ -1,11 +1,17 @@
 .promo {
-  outline: 1px solid grey;
+  
   width: 100%;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__title {
     @include title;
   }
   &__text {
     @include text;
+    width:73.8%
   }
 }
 @media #{$tablet-width} {

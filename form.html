@@ -15,9 +15,9 @@
 
       <nav class="top-nav">
         <ul class="top-nav__list">
-          <li class="top-nav__item"><a href="index.html" class="top-nav__link--active">Главная</a></li>
+          <li class="top-nav__item"><a href="index.html" class="top-nav__link">Главная</a></li>
           <li class="top-nav__item"><a href="photo.html" class="top-nav__link">Фото и видео</a></li>
-          <li class="top-nav__item"><a class="top-nav__link">Форма отзыва</a></li>
+          <li class="top-nav__item"><a class="top-nav__link  top-nav__link--active">Форма отзыва</a></li>
           <li class="top-nav__item"><a href="#" class="top-nav__link">HTML ACADEMY</a></li>
         </ul>
       </nav>
@@ -44,67 +44,95 @@
     <!--  Form -->
 
     <div class="feedback">
-      <form class="feedback-form" action="/echo" method="post" name="feedback-form">
-        <fieldset class="feedback-form__group feedback-form__group--name">
-          <legend class="feedback-form__title">Представьтесь, пожалуйста:</legend>
+      <form class="form" action="/echo" method="post" name="feedback-form">
+        <div class="form__group form__group--name">
+          <fieldset>
+            <legend class="form__title">Представьтесь, пожалуйста:</legend>
+            <div class="flex-wrapper">
+              <label for="name" class="form__label">Имя:</label>
+              <input class="form__input" type="text" id="name" placeholder="Петр" required>
+            </div>
+            <div class="flex-wrapper">
+              <label for="last-name" class="form__label">Фамилия: </label>
+              <input class="form__input" type="text" id="last-name" placeholder="Иванов" required>
+            </div>
 
-          <label for="name">Имя:</label>
-          <input type="text" id="name" placeholder="Петр" required>
+            <div class="flex-wrapper">
+              <label for="middle-name" class="form__label">Отчество:</label>
+              <input class="form__input" type="text" id="middle-name" placeholder="Александрович" required>
+            </div>
+          </fieldset>
+        </div>
 
-          <label for="last-name">Фамилия: </label>
-          <input type="text" id="last-name" placeholder="Иванов" required>
+        <div class="form__group form__group--contact">
 
-          <label for="middle-name">Отчество:</label>
-          <input type="text" id="middle-name" placeholder="Александрович" required>
-        </fieldset>
+          <div class="form__title">Контактная информация: </div>
 
-        <fieldset class="feedback-form__group feedback-form__group--contact">
-          <legend class="feedback-form__title">Контактная информация: </legend>
+          <div class="flex-wrapper flex-wrapper--contacts">
+            <label for="tel" class="form__label">Контактный телефон:</label>
+            <input type="tel" class="form__input form__input--tel" id="tel" placeholder="Введите телефон" pattern="0-9" required>
+<!--            <span class="form__icon-phone"></span>-->
+          </div>
+          <div class="flex-wrapper flex-wrapper--contacts">
 
-          <label for="tel">Контактный телефон:</label>
-          <input type="tel" id="tel" placeholder="Введите телефон" pattern="0-9" required>
+            <label for="email" class="form__label"> Электронная почта:</label>
 
-          <label for="email"> Электронная почта:</label>
-          <input type="email" id="email" placeholder="Введите email" pattern="A-z" required>
+            <input type="email" id="email" class="form__input form__input--email" placeholder="Введите email" pattern="A-z" required>
+<!--            <span class="form__icon-email"></span>-->
+        </div>
 
-        </fieldset>
+        </div>
 
-        <fieldset class="feedback-form__group feedback-form__group--general">
-          <legend class="feedback-form__title"> Ваше общее впечатление: </legend>
+        <div class="form__group form__group--general">
+          <fieldset>
+            <legend class="form__title"> Ваше общее впечатление: </legend>
 
-          <input type="radio" id="good" checked>
-          <label for="good">Скорее положительное</label>
+            <div class="flex-wrapper flex-wrapper--general">
+              <input class="form__radio" type="radio" id="good" name="general" checked>
+              <label for="good" class="form__label--radio">Скорее положительное</label>
+            </div>
+            <div class="flex-wrapper flex-wrapper--general">
+              <input class="form__radio" type="radio" id="bad" name="general">
+              <label for="bad" class="form__label--radio">Скорее отрицательное </label>
+            </div>
+            <div class="flex-wrapper flex-wrapper--general">
+              <input class="form__radio" type="radio" id="dunno" name="general">
+              <label for="dunno" class="form__label--radio">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
 
-          <input type="radio" id="bad">
-          <label for="bad">Скорее отрицательное </label>
+        </div>
+        <div class="form__group form__group--sights">
+          <div class="form__title"> Посещенные достопримечательности: </div>
 
-          <input type="radio" id="dunno">
-          <label for="dunno">Затрудняюсь ответить</label>
-        </fieldset>
+          <div class="flex-wrapper flex-wrapper--sights">
+            <input type="checkbox" class="form__checkbox" id="bridge" checked>
+            <label for="bridge" class="form__label--checkbox">Мост дьявола </label>
+          </div>
+          <div class="flex-wrapper flex-wrapper--sights">
+            <input type="checkbox" class="form__checkbox" id="slide-park" checked>
+            <label for="slide-park" class="form__label--checkbox">Слайд парк </label>
+          </div>
+          <div class="flex-wrapper flex-wrapper--sights">
+            <input type="checkbox" class="form__checkbox" id="mountain">
+            <label for="mountain" class="form__label--checkbox">Гора-Колокол </label>
+          </div>
+          <div class="flex-wrapper flex-wrapper--sights">
+            <input type="checkbox" class="form__checkbox" id="rocks" checked>
+            <label for="rocks" class="form__label--checkbox">Красные скалы</label>
+          </div>
+        </div>
 
-        <fieldset class="feedback-form__group feedback-form__group--sights">
-          <legend class="feedback-form__title"> Посещенные достопримечательности: </legend>
-
-          <input type="checkbox" id="bridge" checked>
-          <label for="bridge">Мост дьявола </label>
-
-          <input type="checkbox" id="slide-park" checked>
-          <label for="slide-park">Слайд парк </label>
-
-          <input type="checkbox" id="mountain">
-          <label for="mountain">Гора-Колокол </label>
-
-          <input type="checkbox" id="rocks" checked>
-          <label for="rocks">Красные скалы</label>
-        </fieldset>
-
-        <fieldset class="feedback-form__group feedback-form__group--emo">
-          <legend class="feedback-form__title"> Опишите свои эмоции: </legend>
-          <textarea class="emotions" rows="5" cols="30" required>Опишите подробно все свои восторги</textarea>
-        </fieldset>
-
-        <button type="submit" class="feedback__send">Отправить отзыв</button>
-
+        <div class="form__group form__group--emo">
+          <fieldset>
+            <legend class="form__title"> Опишите свои эмоции: </legend>
+            <textarea class="emotions" required>Опишите подробно все свои восторги</textarea>
+          </fieldset>
+        </div>
+        <div class="button-wrapper">
+          <button type="submit" class="btn btn--form">Отправить отзыв</button>
+          <span class="form__asteriks">* - Обязательные поля</span>
+        </div>
       </form>
     </div>
 
@@ -119,7 +147,7 @@
 
       <div class="page-footer__copyright">
         Разработано
-        <a href="#" class="copyrights"><img src="http://placehold.it/27x34" alt="HTML Academy"></a>
+        <a href="#" class="copyrights"><img src="img/htmlacademy.svg" alt="HTML Academy"></a>
       </div>
 
     </footer>

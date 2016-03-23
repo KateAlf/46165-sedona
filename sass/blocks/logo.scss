@@ -9,7 +9,7 @@
 @media #{$mobile-width} {
   .logo {
     //  Вот тут не уверена, что это правильное решение
-    transform: translateY(252%) translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 @media #{$tablet-width} {
