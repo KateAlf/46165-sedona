@@ -7,15 +7,21 @@
   left: 50%;
   z-index: 10;
 }
+
 @media #{$mobile-width} {
   .logo {
-    //  Вот тут не уверена, что это правильное решение
     transform: translateX(-50%);
   }
 }
+
 @media #{$tablet-width} {
   .logo {
     transform: translateX(-50%);
   }
 }
-@media #{$desktop-width} {}
+
+@media #{$desktop-width} {
+  .logo{
+  width: auto;
+  }
+}
