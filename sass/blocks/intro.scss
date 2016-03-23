@@ -3,9 +3,54 @@
   min-height: 389px;
   background-image: url('../img/bg-back-mobile.jpg');
   background-position: center;
-//  position: relative;
+  position: relative;
   &__img {
-//  position:absolute;
-//  bottom: 0;
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+ 
+  }
+}
+
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url('../img/bg-back-mobile@2x.jpg');
+    background-position: center;
+  }
+}
+
+@media #{$tablet-width} {
+  .intro {
+    background-image: url('../img/bg-back-desktop.jpg');
+    background-position: center;
+    &__img {
+      position: absolute;
+      top: 15%;
+      left: 25%;
+      width: 50%;
+    }
+  }
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url('../img/bg-back-desktop@2x.jpg');
+      background-position: center;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .intro {
+    background-image: url('../img/bg-back-desktop.jpg');
+    background-position: center;
+    
+    &__img {
+      position: absolute;
+      top: 15%;
+      left: 39%;
+      width: 30%;
+     }
   }
 }

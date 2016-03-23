@@ -45,6 +45,9 @@
         @include text;
       }
       &__row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         min-height: 260px;
       }
     }

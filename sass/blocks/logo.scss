@@ -5,6 +5,7 @@
   position: absolute;
   top: 0px;
   left: 50%;
+  z-index: 10;
 }
 @media #{$mobile-width} {
   .logo {

@@ -1,12 +1,25 @@
 .feature-picture {
-
   display: block;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
 }
+
+@media #{$tablet-width} {
+  .feature-picture {
+    display: block;
+    margin: 0 auto;
+    width: 66.7%;
+    overflow: hidden;
+  }
+}
+
 @media #{$desktop-width} {
   .feature-picture {
     display: block;
-    float: right;
-    width: 66.6%;
+    margin: 0 auto;
+    width: 66.7%;
+    height: 256px;
+    overflow: hidden;
   }
 }

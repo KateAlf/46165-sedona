@@ -11,6 +11,21 @@
       background-color: $secondary-color;
       min-height: 208px;
     }
+    &--icon-home {
+      background: url('../img/icon-house.svg') no-repeat;
+      background-size: 12%;
+      background-position: 7% 10%;
+    }
+    &--icon-food {
+      background: url('../img/icon-burger.svg') no-repeat;
+      background-size: 12%;
+      background-position: 7% 10%;
+    }
+    &--icon-souvenirs {
+      background: url('../img/icon-gift.svg') no-repeat;
+      background-size: 12%;
+      background-position: 7% 10%;
+    }
     &__header {
       @include title;
       line-height: 36px;
@@ -19,7 +34,6 @@
       color: white;
     }
     &__number,
-    ,
     &__text {
       @include text;
       width: 80%;
@@ -30,6 +44,7 @@
       @include text;
     }
   }
+  
   @media #{$mobile-width} {
     .feature {
       &--primary {
@@ -48,13 +63,14 @@
       &--icon-food {}
     }
   }
+  
   @media #{$tablet-width} {
     .feature {
       float: left;
-      height: 260px;
+      height: 256px;
       &--primary {
         float: left;
-        width: 31.3%;
+        width: 33.3%;
       }
       &--icon {
         float: left;
@@ -62,13 +78,22 @@
       }
       &--secondary {
         width: 33.3%;
+      }
+      &--icon-home,
+      &--icon-food {
+        background-size: 20%;
+        background-position: 50% 8%;
+      }
+      &--icon-souvenirs {
+        background-size: 20%;
+        background-position: 50% 7%;
       }
     }
   }
+  
   @media #{$desktop-width} {
     .feature {
-      float: left;
-      min-height: 260px;
+      height: 256px;
       &--primary {
         float: left;
         width: 33.3%;
@@ -79,6 +104,15 @@
       }
       &--secondary {
         width: 33.3%;
+      }
+      &--icon-home,
+      &--icon-food {
+        background-size: 15%;
+        background-position: 50% 10%;
+      }
+      &--icon-souvenirs {
+        background-size: 15%;
+        background-position: 50% 7%;
       }
     }
   }
