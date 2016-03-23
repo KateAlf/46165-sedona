@@ -1,9 +1,5 @@
-input[type="text"] {
-  
-}
-input[type="checkbox"] {
-  display: none;
-}
-input[type="checkbox"] + label {
-  
+fieldset {
+  border: none;
+//  outline: 1px solid grey;
+  width: 100%;
 }

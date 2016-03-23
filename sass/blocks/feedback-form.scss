@@ -1,185 +1,312 @@
-  .form {
-    display: flex;
-    flex-direction: column;
-    &__group {
-      border: none;
-      border-bottom: 1px solid #e5e5e5;
-      min-height: 306px;
-    }
-    &__group--name {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      //      Почему эти не создают  равных отступов между элементами?
-      justify-content: space-around;
-      align-items: center;
-    }
-    &__title {
-      @include title;
-    }
-    &__label {
-      @include text;
-      text-align: left;
-      width: 21.9%;
-    }
-    &__input {
-      font-size: 18px;
-      font-weight: 700;
-      color: #000000;
-      text-align: left;
-      width: 60%;
-      border: none;
-      background-color: #e5e5e5;
-      height: 58px;
-      line-height: 58px;
-      padding-left: 22px;
-      &__input--tel {
-        width: 100%;
-        background-color: #f2f2f2;
-      }
-    }
-    
-    &__radio {
-      display: none;
-    }
-    
-    &__label--radio {
-      font-size: 18px;
-      font-weight: 700;
-      text-align: left;
-      cursor: pointer;
-      position: relative;
-      margin-left: 70px;
-
-      }
-    &__label--radio::before {
-      content: '';
-      display: block;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background-color: #f2f2f2;
-      position: absolute;
-      left: -56px;
-      top: -5px;
-    }
-
-    &__radio:checked .form__label--radio::before {
-      content: '';
-      display: block;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background-color: #333333;
-      position: absolute;
-      left: -6px;
-      top: -5px;
-    }
-    
-    &__checkbox {
-      display: none;
-    }
-    &__group--general {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      
-    }
-    
-    
-    @media #{$tablet-width} {
-      .feedback {
-        width: 80%;
-        margin: 0 auto;
-      }
       .form {
+      &__group {
+        border: none;
+        min-height: 306px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        outline: 1px solid grey;
-        &__group--name {
-          flex-basis: 47%;
-          order: 1;
-          align-self: flex-end;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: space-between;
-        }
-        &__group--general {
-          flex-basis: 47%;
-          order: 0;
-          align-self: flex-start;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-        &__group--contact {
-          flex-basis: 100%;
-          order: 2;
-        }
-        &__group--sights {
-          flex-basis: 100%;
-          order: 3;
-        }
-        &__group--emo {
-          flex-basis: 100%;
-          order: 4;
-        }
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0;
       }
-      .feedback__send {
-        order: 5;
+      &__group--name {
+        justify-content: space-around;
+      }
+      &__group--contact {
+        justify-content: space-around;
+      }
+      &__group--general {
+        justify-content: space-around;
+        min-height: 290px;
+      }
+      &__group--sights {
+        justify-content: space-around;
+        min-height: 410px;
+      }
+      &__group--emo {
+        min-height: 250px;
+        border-bottom: none;
+      }
+      &__title {
+        @include title;
+      }
+      &__label {
+        @include text;
+        text-align: left;
+        margin-right: 10px;
+      }
+      &__input {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000000;
+        text-align: left;
+        border: none;
+        background-color: #f2f2f2;
+        height: 58px;
+        line-height: 58px;
+        padding-left: 22px;
+      }
+      &__icon-phone,
+      &__icon-email {
+        position: relative;
+        font-size: 0;
+      }
+      &__icon-phone:after {
+        content: ' ';
+        position: absolute;
+        background-image: url('../img/icon-phone.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #e6e6e6;
+        display: block;
+        width: 58px;
+        height: 58px;
+        z-index: 10;
+      }
+      &__icon-email:after {
+        content: ' ';
+        position: absolute;
+        background-image: url('../img/icon-mail.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #e6e6e6;
+        display: block;
+        width: 58px;
+        height: 58px;
+        z-index: 10;
+      }
+      &__radio + .form__label--radio {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+        margin-left: 70px;
+      }
+      &__radio {
+        display: none;
+      }
+      &__radio + .form__label--radio::before {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: #f2f2f2;
+        position: absolute;
+        left: -65px;
+        top: -70%;
+      }
+      &__radio:checked + .form__label--radio::after {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #333333;
+        position: absolute;
+        left: -48px;
+        top: 1px;
+      }
+      &__checkbox {
+        display: none;
+      }
+      &__checkbox + .form__label--checkbox {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+        margin-left: 70px;
+      }
+      &__checkbox + .form__label--checkbox::before {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        position: absolute;
+        left: -65px;
+        top: -70%;
+      }
+      &__checkbox:checked + .form__label--checkbox::after {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: url('../img/icon-tick.svg') no-repeat;
+        position: absolute;
+        left: -48px;
+        top: 1px;
+      }
+      .emotions {
+        width: 95%;
+        min-height: 160px;
+        background-color: #f2f2f2;
+        border: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 20px;
+      }
+      .emotions:focus {
+        outline: none;
+      }
+      &__asteriks {
+        display: none;
       }
     }
-    @media #{$desktop-width} {
-      .feedback {
-        width: 80%;
-        margin: 0 auto;
-      }
+    
+    @media #{$mobile-width} {
       .form {
         display: flex;
-        flex-direction: row;
-        flex-basis: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        outline: 1px solid grey;
-        &__group--name {
-          flex-basis: 47%;
-          order: 1;
-          align-self: flex-end;
+        flex-direction: column;
+        &__group {
+          border-bottom: 1px solid #e5e5e5;
+        }
+        &__icon-phone {
+          right: -320px;
+          top: -75px;
+        }
+        &__icon-email {
+          right: -320px;
+          top: -109px;
+        }
+      }}
+      @media #{$tablet-width} {
+        .feedback {
+          width: 80%;
+          margin: 0 auto;
+        }
+        .form {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          justify-content: space-between;
-        }
-        &__group--general {
-          flex-basis: 47%;
-          order: 0;
-          align-self: flex-start;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-        &__group--contact {
-          flex-basis: 100%;
-          order: 2;
-        }
-        &__group--sights {
-          flex-basis: 100%;
-          order: 3;
-        }
-        &__group--emo {
-          flex-basis: 100%;
-          order: 4;
+          justify-content: center;
+          align-content: center;
+          &__group--name {
+            width: 47%;
+            order: 1;
+            align-self: flex-end;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+          }
+          &__group--general {
+            width: 47.7%;
+            order: 0;
+            align-self: flex-start;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+          &__group--contact {
+            width: 100%;
+            order: 2;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: 225px;
+          }
+          &__group--sights {
+            width: 100%;
+            order: 3;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: 225px;
+          }
+          &__group--emo {
+            flex-basis: 100%;
+            order: 4;
+          }
+          &__title {
+            width: 100%;
+          }
+          .__emotions {
+            min-height: 260px;
+          }
         }
       }
-    }
-    .feedback__send {
-      order: 5;
-    }
-  }
+      @media #{$desktop-width} {
+        .feedback {
+          width: 80%;
+          margin: 0 auto;
+        }
+        .form {
+          margin: 0 auto;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: space-between;
+          &__group--name {
+            width: 49.9%;
+            flex-shrink: 1;
+            order: 1;
+            align-self: flex-end;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: none;
+          }
+          &__group--general {
+            width: 49.9%;
+            order: 0;
+            align-self: flex-start;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: none;
+            border-right: 1px solid #dbdbdb;
+          }
+          &__group--sights {
+            width: 100%;
+            order: 3;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: 225px;
+          }
+          &__group--emo {
+            width: 100%;
+            order: 4;
+          }
+          &__title {
+            position: relative;
+            width: 100%;
+          }
+          &__asteriks {
+            width: 50%;
+            display: block;
+            @include text;
+          }
+        }
+}
+      //    yet to be finished
+      //      &__icon-phone {
+      //        position: absolute;
+      //        right: 0;
+      //        top: 0;
+      //      }
+      //      &__icon-email {
+      //        position: absolute;
+      //        right: -340px;
+      //        top: -54px;
+      //      }
+      //           &__title:before{
+      //             position: absolute;
+      //             top: 0px;
+      //             left: 160px;
+      //             z-index: 10;
+      //             display: block;
+      //             height: 15px;
+      //             width:23.3%;
+      //             background-color: black; //#dbdbdb;
+      //           }

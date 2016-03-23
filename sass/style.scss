@@ -10,6 +10,8 @@
 @import "mixins.scss";
 @import "global/fonts.scss";
 @import "global/body.scss";
+@import "global/form.scss";
+
 
 /* Framework */
 
@@ -39,6 +41,8 @@
 @import "blocks/promo.scss";
 @import "blocks/promo-video.scss";
 @import "blocks/feedback-form.scss";
+@import "blocks/flex-wrapper.scss";
+@import "blocks/button-wrapper.scss";
 @import "blocks/booking.scss";
 @import "blocks/map.scss";
 @import "blocks/social-links.scss";
