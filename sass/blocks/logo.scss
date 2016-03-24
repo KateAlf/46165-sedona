@@ -3,9 +3,10 @@
   margin: 0 auto;
   width: 102px;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 50%;
   z-index: 10;
+  
 }
 
 @media #{$mobile-width} {

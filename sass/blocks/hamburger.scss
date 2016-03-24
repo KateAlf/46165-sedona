@@ -12,6 +12,7 @@
   border-radius: none;
   margin: 0;
   padding: 0;
+  
   &--box {
     position: absolute;
     top: 9px;
@@ -54,22 +55,22 @@
   outline: none;
 }
 
-.hamburger:active .hamburger--box{ 
-  background-color: white;
-}
-
-.hamburger:active .hamburger--box::before{ 
-  top: 0;
-  transform: rotate(45deg);
-  background-color: grey;
-}
-
-.hamburger:active .hamburger--box::after{ 
-  bottom: 0;
-  transform: rotate(-45deg);
-  background-color: grey;
-}
-
-.hamburger:active .hamburger--box::after,
-.hamburger:active .hamburger--box::before{
-  transition-delay: 0, 0.3s; }
+//.hamburger:active .hamburger--box{ 
+//  background-color: white;
+//}
+//
+//.hamburger:active .hamburger--box::before{ 
+//  top: 0;
+//  transform: rotate(45deg);
+//  background-color: grey;
+//}
+//
+//.hamburger:active .hamburger--box::after{ 
+//  bottom: 0;
+//  transform: rotate(-45deg);
+//  background-color: grey;
+//}
+//
+//.hamburger:active .hamburger--box::after,
+//.hamburger:active .hamburger--box::before{
+//  transition-delay: 0, 0.3s; }
