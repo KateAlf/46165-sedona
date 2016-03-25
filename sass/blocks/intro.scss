@@ -1,17 +1,26 @@
 .intro {
   width: 100%;
-  
   min-height: 389px;
   background-image: url('../img/bg-back-mobile.jpg');
   background-position: center;
   position: relative;
+  &__triangle {
+    display: block;
+    width: 100%;
+    height: 57px;
+    background-image: url('../img/bg-intro-triangle-mobile.svg');
+    background-size: 100% 27px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    z-index: 10;
+  }
   &__img {
-    
     position: absolute;
     top: 15%;
     left: 0%;
     width: 100%;
- 
   }
 }
 
@@ -27,6 +36,11 @@
   .intro {
     background-image: url('../img/bg-back-desktop.jpg');
     background-position: center;
+    &__triangle {
+      background-image: url('../img/bg-intro-triangle-tablet.svg');
+       background-size: 100% 57px;
+    
+    }
     &__img {
       position: absolute;
       top: 15%;
@@ -47,12 +61,15 @@
   .intro {
     background-image: url('../img/bg-back-desktop.jpg');
     background-position: center;
-    
+    &__triangle {
+      background: url('../img/bg-intro-triangle-desktop.svg') no-repeat;
+      
+    }
     &__img {
       position: absolute;
       top: 15%;
       left: 39%;
       width: 30%;
-     }
+    }
   }
 }

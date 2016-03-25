@@ -13,16 +13,16 @@
     }
     &--icon-home {
       background: url('../img/icon-house.svg') no-repeat;
-      background-size: 12%;
-      background-position: 7% 10%;
     }
     &--icon-food {
       background: url('../img/icon-burger.svg') no-repeat;
-      background-size: 12%;
-      background-position: 7% 10%;
     }
     &--icon-souvenirs {
       background: url('../img/icon-gift.svg') no-repeat;
+    }
+    &--icon-home,
+    &--icon-food,
+    &--icon-souvenirs {
       background-size: 12%;
       background-position: 7% 10%;
     }
@@ -96,14 +96,14 @@
       height: 256px;
       &--primary {
         float: left;
-        width: 33.3%;
+        width: 33.4%;
       }
       &--icon {
         float: left;
-        width: 33.3%;
+        width: 33.4%;
       }
       &--secondary {
-        width: 33.3%;
+        width: 33.4%;
       }
       &--icon-home,
       &--icon-food {

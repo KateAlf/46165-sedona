@@ -1,76 +1,75 @@
-.hamburger {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 10;
-  display: block;
-  width: 23px;
-  height: 21px;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: none;
-  margin: 0;
-  padding: 0;
-  
-  &--box {
+@media #{$mobile-width} {
+  .hamburger {
     position: absolute;
-    top: 9px;
-    right: 0px;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: block;
+    width: 23px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: none;
+    margin: 0;
+    padding: 0;
+    &--box {
+      position: absolute;
+      top: 9px;
+      right: 0px;
+      z-index: 10;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $primary-color;
+      transition: background 0 0.3s;
+    }
+  }
+  .hamburger--box::before,
+  .hamburger--box::after {
+    position: absolute;
+    right: 0;
     z-index: 10;
     display: block;
     width: 100%;
     height: 4px;
     background-color: $primary-color;
-    transition: background 0 0.3s;
+    content: '';
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0;
+  }
+  .hamburger--box::before {
+    top: -8px;
+    transition-property: top, transform;
+  }
+  .hamburger--box::after {
+    bottom: -8px;
+    transition-property: bottom, transform;
+  }
+  .hamburger:focus {
+    outline: none;
+  }
+  .hamburger.active .hamburger--box {
+    background-color: $primary-color;
+  }
+  .hamburger.active .hamburger--box::before {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: white;
+  }
+  .hamburger.active .hamburger--box::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+  .hamburger.active .hamburger--box::after,
+  .hamburger.active .hamburger--box::before {
+    transition-delay: 0, 0.3s;
+  }
+  }
+
+@media #{$tablet-width} {
+  .hamburger {
+    display: none;
   }
 }
-
-.hamburger--box::before,
-.hamburger--box::after {
-  position: absolute;
-  right: 0;
-  z-index: 10;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $primary-color;
-  content: '';
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0;
-  
-}
-
-.hamburger--box::before {
-  top: -8px;
-  transition-property: top, transform;
-}
-
-.hamburger--box::after {
-  bottom: -8px;
-  transition-property: bottom, transform;
-}
-
-.hamburger:focus {
-  outline: none;
-}
-
-//.hamburger:active .hamburger--box{ 
-//  background-color: white;
-//}
-//
-//.hamburger:active .hamburger--box::before{ 
-//  top: 0;
-//  transform: rotate(45deg);
-//  background-color: grey;
-//}
-//
-//.hamburger:active .hamburger--box::after{ 
-//  bottom: 0;
-//  transform: rotate(-45deg);
-//  background-color: grey;
-//}
-//
-//.hamburger:active .hamburger--box::after,
-//.hamburger:active .hamburger--box::before{
-//  transition-delay: 0, 0.3s; }

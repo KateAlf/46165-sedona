@@ -16,9 +16,22 @@
   &:active {
     background-color: $primary-color-active;
   }
-  &__twitter {
-    
+  &--twitter {
+    background-image: url('../../img/icon-twitter.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
-  &__facebook {}
-  &__youtube {}
+  &--facebook {
+    background-image: url('../../img/icon-facebook.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  &--youtube {
+    background-image: url('../../img/icon-youtube.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
 }

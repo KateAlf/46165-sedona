@@ -11,7 +11,10 @@
 <body>
   <div class="page-wrapper clearfix">
     <header class="page-header">
-      <button type="button" class="top-nav__close">+</button>
+      <button class="hamburger" type="button">
+        <span class="hamburger--box">
+          </span>
+      </button>
 
       <nav class="top-nav">
         <ul class="top-nav__list">
@@ -23,7 +26,10 @@
       </nav>
 
       <div class="logo">
-        <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" class="top-logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" class="top-logo">
+        </picture>
       </div>
     </header>
 
@@ -143,6 +149,7 @@
 
     </footer>
   </div>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
