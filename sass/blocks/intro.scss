@@ -1,5 +1,6 @@
 .intro {
   width: 100%;
+  
   min-height: 389px;
   background-image: url('../img/bg-back-mobile.jpg');
   background-position: center;
@@ -38,8 +39,8 @@
     background-position: center;
     &__triangle {
       background-image: url('../img/bg-intro-triangle-tablet.svg');
-       background-size: 100% 57px;
-    
+      background-size: 100% 57px;
+       bottom: 0;
     }
     &__img {
       position: absolute;
@@ -63,7 +64,9 @@
     background-position: center;
     &__triangle {
       background: url('../img/bg-intro-triangle-desktop.svg') no-repeat;
+      background-size: auto 57px;
       
+      bottom: 0;
     }
     &__img {
       position: absolute;

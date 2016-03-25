@@ -1,103 +1,89 @@
+.photo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 112px;
+  &__caption {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+  }
+  &__author {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+  }
+  &__likes {
+    @include text;
+    font-weight: bold;
+    margin-left: 30px;
+    position: relative;
+  }
+}
+
+.icon-like {
+  position: absolute;
+  top: -2px;
+  left: -30px;
+  fill: #b2b2b2;
+}
+
+@media #{$tablet-width} {
   .photo-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 112px;
+    background-color: $secondary-color;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    min-height: 80px;
+    padding-left: 20px;
     &__caption {
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: bold;
-      text-align: left;
+      width: 75%;
     }
     &__author {
-      font-size: 14px;
-      font-weight: normal;
-      text-align: left;
+      width: 75%;
     }
     &__likes {
-      @include text;
-      font-weight: bold;
-      margin-left: 30px;
-      position: relative;
-      &::before {
-        position: absolute;
-        top: -2px;
-        left: -30px;
-        display: block;
-        width: 22px;
-        height: 21px;
-        content: ' ';
-        background: url('../img/icon-like.svg') no-repeat;
-      }
+      width: 14.4%;
+      position: absolute;
+      top: 40%;
     }
   }
-  
-  @media #{$tablet-width} {
-    .photo-info {
-      background-color: $secondary-color;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-content: center;
-      position: relative;
-      min-height: 80px;
-      padding-left: 20px;
-      &__caption {
-        width: 75%;
-      }
-      &__author {
-        width: 75%;
-      }
-      &__likes {
-        width: 24.4%;
-        position: absolute;
-        top: 40%;
-        &::before {
-          position: absolute;
-          top: -2px;
-          left: 50px;
-          display: block;
-          width: 22px;
-          height: 21px;
-          content: ' ';
-          background: url('../img/icon-like.svg') no-repeat;
-        }
-      }
+  .icon-like {
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    fill: #b2b2b2;
+  }
+}
+
+@media #{$desktop-width} {
+  .photo-info {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: -80px;
+    &__caption {
+      width: 75%;
+      color: white;
+    }
+    &__author {
+      width: 75%;
+      color: white;
+    }
+    &__likes {
+      width: 14.4%;
+      position: absolute;
+      top: 40%;
+      color: white;
     }
   }
-  
-  @media #{$desktop-width} {
-    .photo-info {
-      background-color: rgba(0, 0, 0, 0.3);
-      position: relative;
-      top: -80px;
-      &__caption {
-        width: 75%;
-        color: white;
-      }
-      &__author {
-        width: 75%;
-        color: white;
-      }
-      &__likes {
-        width: 24.4%;
-        position: absolute;
-        top: 40%;
-        color: white;
-        align-self: flex-start;
-        &::before {
-          position: absolute;
-          top: -2px;
-          left: 0px;
-          display: block;
-          width: 22px;
-          height: 21px;
-          content: ' ';
-          background: url('../img/icon-like.svg') no-repeat;
-        }
-      }
-    }
+  .icon-like {
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    fill: white;
   }
-  
-  //outline: 1px solid grey;
+}
