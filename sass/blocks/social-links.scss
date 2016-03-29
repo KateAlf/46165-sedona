@@ -1,12 +1,24 @@
 .social-links {
-  
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 85px;
+}
+
 @media #{$tablet-width} {
   .social-links {
     width: 33.3%;
-  
+    margin-right: 0px;
+    padding-left: 45px;
   }
 }
+
+@media #{$desktop-width} {
+  .social-links {
+    width: 33.3%;
+    margin-right: 20px;
+    padding-left: 80px;
+  }
+}
+

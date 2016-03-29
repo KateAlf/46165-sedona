@@ -1,6 +1,5 @@
 .intro {
   width: 100%;
-  
   min-height: 389px;
   background-image: url('../img/bg-back-mobile.jpg');
   background-position: center;
@@ -19,9 +18,10 @@
   }
   &__img {
     position: absolute;
-    top: 15%;
-    left: 0%;
-    width: 100%;
+    top: 24.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
   }
 }
 
@@ -37,6 +37,7 @@
   .intro {
     background-image: url('../img/bg-back-desktop.jpg');
     background-position: center 30%;
+    min-height: 518px;
     &__triangle {
       background-image: url('../img/bg-intro-triangle-tablet.svg');
       background-size: 100% 57px;
@@ -45,8 +46,9 @@
     &__img {
       position: absolute;
       top: 15%;
-      left: 25%;
-      width: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
     }
   }
   @media (min-resolution: 144dpi),
@@ -62,11 +64,11 @@
   .intro {
     background-image: url('../img/bg-back-desktop.jpg');
     background-position: center;
+    
     &__triangle {
       background: url('../img/bg-intro-triangle-desktop.svg') no-repeat;
       background-size: 1201px 57px;
       background-position-x: -1px; 
-      
       bottom: 0;
     }
     &__img {
@@ -74,7 +76,7 @@
       top: 15%;
       left: 50%;
       transform: translateX(-50%);
-      width: 30%;
+      width: 38.5%;
     }
   }
 }

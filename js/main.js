@@ -7,12 +7,3 @@ menu.addEventListener("click", function (event) {
   nav.classList.toggle("top-nav-show");
   menu.classList.toggle("active");
 });
-
-//window.addEventListener("keydown", function (event) {
-//  if (event.keyCode == 27) {
-//    if (nav.classList.contains("top-nav-show")) {
-//      nav.classList.remove("top-nav-show");
-//      menu.classList.remove("active");
-//    }
-//  }
-//});

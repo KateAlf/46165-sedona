@@ -1,10 +1,14 @@
   .features {
     &__title {
       @include title;
-      font-size: 21px;
+      margin: 0 auto;
+      margin-bottom: 35px;
+      width: 255px;
     }
     &__text {
       @include text;
+      margin: 0 auto;
+      line-height: 26px;
     }
   }
   
@@ -12,32 +16,45 @@
     .features {
       &__header {
         margin-top: 45px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         position: relative;
+      }
+      &__row--secondary {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 256px;
+      }
+      &__row--secondary .feature--primary {
+        min-height: 155px;
       }
       &__header:after {
         position: absolute;
-        top: 165px;
-        right: 0px;
+        top: 180px;
         content: '';
         display: block;
-        border: 170px solid transparent;
+        border: 160px solid transparent;
         border-top: 18px solid white;
         width: 0;
         height: 0;
       }
+    }
+    .span-fix {
+      display: inline;
     }
   }
   
   @media #{$tablet-width} {
     .features {
       &__header {
-        margin-top: 50px;
-        margin-bottom: 55px;
+       
+        margin: 50px auto 50px auto;
       }
       &__title {
+         width: 70%;
         @include title;
         font-size: 21px;
+        margin-bottom: 25px;
       }
       &__text {
         @include text;
@@ -53,9 +70,16 @@
   
   @media #{$desktop-width} {
     .features {
+      &__row--icons {
+        display: flex;
+        flex-direction: row;
+      }
       &__header {
-        margin-top: 50px;
-        margin-bottom: 60px;
+        margin: 50px auto 45px auto;
+      }
+      &__title {
+        width: 51%;
+        margin-bottom: 30px;
       }
     }
   }
