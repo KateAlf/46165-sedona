@@ -2,3 +2,19 @@
   display: block;
   line-height: 15px;
 }
+
+@media #{$tablet-width} {
+.span-form {
+  display: none;
+  }
+  
+  .span-form--sights {
+    display: block;
+  }
+}
+
+@media #{$desktop-width} {
+.span-form {
+  display: inline;
+  }
+}
