@@ -6,11 +6,11 @@
   
   @media #{$mobile-width} {
     .feature-picture {
-      height: 260px;
+      height: 256px;
       width: 100%;
     }
     .feature-picture img {
-      height: 260px;
+      height: 256px;
       transform: translateX(-20%);
     }
   }
