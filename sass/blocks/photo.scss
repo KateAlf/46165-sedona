@@ -9,8 +9,12 @@
   .photo {
     border-top: 1px solid #e5e5e5;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    min-height: 415px;
+    justify-content: space-around;
+    min-height: 340px;
+    padding-top: 20px;
+  }
+  .photo--primary {
+    padding-top: 0px;
   }
 }
 
@@ -28,7 +32,7 @@
   .photo {
     width: 33.3%;
     flex-wrap: wrap;
-    //    Здесь между первым фото и остальными вертикальный отступ, не пойму, откуда он берется и как его убрать!
+    position: relative;
     &--primary {
       width: 100%;
     }

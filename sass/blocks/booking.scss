@@ -6,10 +6,9 @@
   margin: 0 auto;
   &__title {
     @include title;
-    }
+  }
   &__text {
     @include text;
-//    padding-bottom: 40px;
   }
 }
 
@@ -36,7 +35,7 @@
     &__title {
       margin-bottom: 14px;
       font-size: 30px;
-      }
+    }
     &__text {
       width: 474px;
       margin-bottom: 47px;

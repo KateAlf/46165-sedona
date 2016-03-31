@@ -7,7 +7,6 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  //  outline: 1px solid black;
 }
 
 .flex-wrapper--contacts {
@@ -26,7 +25,7 @@
   .flex-wrapper--contacts {
     width: 80%;
   }
-  .flex-wrapper--sights{
+  .flex-wrapper--sights {
     margin-bottom: 20px;
   }
 }
@@ -45,7 +44,6 @@
     align-items: center;
     width: 80%;
     padding-left: 0px;
-    
   }
   .flex-wrapper--sights {
     flex-direction: row;
@@ -62,12 +60,11 @@
   .flex-wrapper--general {
     margin-bottom: 20px;
     padding-left: 10px;
-
   }
   .flex-wrapper--name {
     margin-bottom: 20px;
     padding-left: 55px;
-      width: 90%;
+    width: 90%;
   }
   .flex-wrapper--contacts {
     flex-wrap: nowrap;
