@@ -1,24 +1,14 @@
 .social-link {
+  display: block;
   width: 46px;
-  height: 48px;
-  background-color: $primary-color;
+  height: 31px;
+  padding-top: 15px;
   margin-right: 6px;
-  //  delete after adding svg-icons! 
-  font-size: 11px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  line-height: 48px;
-  //end delete
+  background-color: $primary-color;
   &:hover {
     background-color: $primary-color-hover;
   }
   &:active {
     background-color: $primary-color-active;
   }
-  &__twitter {
-    
-  }
-  &__facebook {}
-  &__youtube {}
 }

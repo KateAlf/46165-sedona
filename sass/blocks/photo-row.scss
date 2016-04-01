@@ -3,20 +3,34 @@
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  margin: 0 auto;
 }
 
 @media #{$mobile-width} {
   .photo-row {
     flex-direction: column;
     flex-wrap: wrap;
+    width: 87%;
+    padding-top: 19px;
+  }
+}
+
+@media #{$tablet-width} {
+  .photo-row {
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 7px;
+    margin-bottom: 35px;
   }
 }
 
 @media #{$desktop-width} {
   .photo-row {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 7px;
+    margin-bottom: 40px;
   }
 }

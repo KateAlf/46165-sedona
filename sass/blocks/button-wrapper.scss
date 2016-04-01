@@ -1,10 +1,35 @@
 .button-wrapper {
   width: 100%;
-   order: 6;
+  order: 6;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
-  
+}
+
+@media #{$mobile-width} {
+  .button-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media #{$tablet-width} {
+  .button-wrapper {
+    width: 94%;
+    order: 6;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+@media #{$desktop-width} {
+  .button-wrapper {
+    width: 94%;
+    order: 6;
+    margin-top: 10px;
+    margin-bottom: 65px;
+  }
 }

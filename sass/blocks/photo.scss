@@ -2,12 +2,19 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  overflow: hidden;
 }
 
 @media #{$mobile-width} {
   .photo {
     border-top: 1px solid #e5e5e5;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    min-height: 340px;
+    padding-top: 20px;
+  }
+  .photo--primary {
+    padding-top: 0px;
   }
 }
 
@@ -25,7 +32,7 @@
   .photo {
     width: 33.3%;
     flex-wrap: wrap;
-    //    Здесь между первым фото и остальными вертикальный отступ, не пойму, откуда он берется и как его убрать!
+    position: relative;
     &--primary {
       width: 100%;
     }
