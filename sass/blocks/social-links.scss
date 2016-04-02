@@ -6,6 +6,12 @@
   padding-left: 85px;
 }
 
+@media #{$mobile-width} {
+  .social-links {
+    margin-top: 30px;
+  }
+}
+
 @media #{$tablet-width} {
   .social-links {
     width: 33.3%;

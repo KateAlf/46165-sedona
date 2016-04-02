@@ -1,5 +1,6 @@
 /* Compiled SCSS File with all *.scss files */
 
+
 /* VENDOR */
 
 @import "normalize.scss";
@@ -14,8 +15,6 @@
 @import "global/form.scss";
 @import "global/icons.scss";
 
-
-
 /* Framework */
 
 @import "blocks/page-wrapper.scss";
@@ -23,7 +22,6 @@
 @import "blocks/page-footer.scss";
 @import "blocks/logo.scss";
 @import "blocks/logo-wrapper.scss";
-
 @import "blocks/top-nav.scss";
 @import "blocks/hamburger.scss";
 
@@ -39,6 +37,7 @@
 @import "blocks/feature-picture.scss";
 @import "blocks/intro.scss";
 @import "blocks/logo.scss";
+@import "blocks/top-logo.scss";
 @import "blocks/preface.scss";
 @import "blocks/photo-row.scss";
 @import "blocks/photo.scss";

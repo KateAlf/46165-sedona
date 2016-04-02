@@ -54,47 +54,6 @@
     &__link:active {
       opacity: 0.3;
     }
-//    &__close {
-//      position: absolute;
-//      top: -15px;
-//      right: 15px;
-//      z-index: 10;
-//      display: none;
-//      font-size: 60px;
-//      color: white;
-//      border: none;
-//      background-color: transparent;
-//      transform: rotate(45deg);
-//    }
-//    &__open,
-//    &__open:before,
-//    &__open:after {
-//      position: absolute;
-//      top: 245px;
-//      right: 30px;
-//      z-index: 10;
-//      display: block;
-//      width: 23px;
-//      height: 4px;
-//      background-color: $primary-color;
-//      border: none;
-//      content: '';
-//      cursor: pointer;
-//    }
-//    &__open:before {
-//      top: 8px;
-//      right: 0px;
-//    }
-//    &__open:after {
-//      top: -8px;
-//      right: 0px;
-//    }
-//    &__open:active .top-nav {
-//      display: block;
-//    }
-//    &__close:active .top-nav {
-//      display: none;
-//    }
   }
   .top-nav-show {
     display: block;

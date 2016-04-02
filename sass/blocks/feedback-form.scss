@@ -55,9 +55,9 @@
     font-size: 0;
   }
   &__icon-phone:after {
-    content: ' ';
+    content: " ";
     position: absolute;
-    background-image: url('../img/icon-phone.svg');
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #e6e6e6;
@@ -67,9 +67,9 @@
     z-index: 10;
   }
   &__icon-email:after {
-    content: ' ';
+    content: " ";
     position: absolute;
-    background-image: url('../img/icon-mail.svg');
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #e6e6e6;
@@ -84,13 +84,13 @@
     text-align: left;
     cursor: pointer;
     position: relative;
-    margin-left: 70px;
+    padding-left: 70px;
   }
   &__radio {
     display: none;
   }
   &__radio + .form__label--radio::before {
-    content: '';
+    content: " ";
     display: block;
     width: 6px;
     height: 6px;
@@ -98,47 +98,47 @@
     border-radius: 50%;
     background-color: #f2f2f2;
     position: absolute;
-    left: -65px;
-    top: -70%;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   &__radio:checked + .form__label--radio::before {
-    content: '';
+    content: " ";
     display: block;
     width: 22px;
     height: 22px;
-    border: 0px;
+    border: 18px solid #e5e5e5;
     border-radius: 50%;
     background-color: #333333;
     position: absolute;
-    left: -45px;
-    top: 0;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
   }
-  
   &__radio + .form__label--radio:hover::before {
-     border: 25px solid #e5e5e5;
-     background-color: #e5e5e5;
+    border: 25px solid #e5e5e5;
+    background-color: #e5e5e5;
   }
-  
   &__radio:checked + .form__label--radio:hover::before {
     width: 22px;
     height: 22px;
     border: 18px solid #e5e5e5;
     background-color: #333333;
     position: absolute;
-    left: -63px;
-    top: -18px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
   }
- &__radio:checked + .form__label--radio:active::before {
+  &__radio:checked + .form__label--radio:active::before {
     width: 22px;
     height: 22px;
     border: 18px solid #e5e5e5;
     background-color: #a4a4a4;
     position: absolute;
-    left: -63px;
-    top: -18px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
   }
-  
-  
   &__checkbox {
     display: none;
   }
@@ -151,7 +151,7 @@
     margin-left: 70px;
   }
   &__checkbox + .form__label--checkbox::before {
-    content: '';
+    content: "";
     display: block;
     width: 56px;
     height: 56px;
@@ -162,41 +162,37 @@
     top: -70%;
   }
   &__checkbox:checked + .form__label--checkbox::after {
-    content: '';
+    content: "";
     display: block;
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: url('../img/icon-tick.svg') no-repeat;
+    background: url("../img/icon-tick.svg") no-repeat;
     position: absolute;
     left: -48px;
     top: 1px;
   }
   &__checkbox + .form__label--checkbox:hover::before {
-     background-color: #e5e5e5;
+    background-color: #e5e5e5;
   }
-  
-   &__checkbox + .form__label--checkbox:active::before {
-     background-color: #d5d5d5;
+  &__checkbox + .form__label--checkbox:active::before {
+    background-color: #d5d5d5;
   }
-  
   &__checkbox:checked + .form__label--checkbox:active::after {
-  background: url('../img/icon-tick-grey.svg') no-repeat; 
+    background: url("../img/icon-tick-grey.svg") no-repeat;
   }
-  
-
-  
-  
-  
   &__emotions {
-    width: 85%;
+    width: 100%;
     min-height: 160px;
     background-color: #f2f2f2;
     border: none;
     color: black;
     font-size: 18px;
     font-weight: 700;
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 55px;
+    resize: none;
   }
   &__emotions:focus {
     outline: none;
@@ -219,7 +215,6 @@
     padding-top: 0px;
     &__group {
       border-bottom: 1px solid #e5e5e5;
-      outline: 1px solid grey;
       padding-top: 18px;
     }
     &__group--general {
@@ -246,13 +241,14 @@
     }
     &__group--emo {
       padding-top: 27px;
+      border-bottom: none;
     }
     &__group--emo .form__title {
       text-align: center;
       margin-bottom: 20px;
     }
     &__emotions {
-      margin-left: 20px;
+      width: 94%;
       padding-left: 18px;
     }
     &__icon-phone {
@@ -349,7 +345,7 @@
       position: relative;
     }
     &__title--element:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 10px;
       left: 0px;
@@ -360,7 +356,7 @@
       background-color: #dbdbdb;
     }
     &__title--element:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 10px;
       right: 0px;
@@ -488,7 +484,7 @@
       left: 0px;
     }
     &__error {
-      top: 10px;
+      top: -15px;
       left: 150px;
     }
   }

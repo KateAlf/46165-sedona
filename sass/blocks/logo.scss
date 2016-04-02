@@ -16,12 +16,13 @@
 
 @media #{$tablet-width} {
   .logo {
+    width: 104px;
     transform: translateX(-50%);
   }
 }
 
 @media #{$desktop-width} {
-  .logo{
-  width: auto;
+  .logo {
+    width: 188px;
   }
 }

@@ -10,15 +10,14 @@
 
 @media #{$mobile-width} {
   .button-wrapper {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: 40px;
   }
 }
 
 @media #{$tablet-width} {
   .button-wrapper {
-    width: 94%;
+    width: 100%;
     order: 6;
     margin-top: 20px;
     margin-bottom: 60px;
@@ -27,7 +26,7 @@
 
 @media #{$desktop-width} {
   .button-wrapper {
-    width: 94%;
+    width: 100%;
     order: 6;
     margin-top: 10px;
     margin-bottom: 65px;

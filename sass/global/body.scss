@@ -6,6 +6,10 @@ body {
   display: block
 }
 
+a {
+  text-decoration: none;
+}
+
 @media #{$desktop-width} {
   body {
     background-color: #f2f2f2;

@@ -3,9 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona Photo</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
 
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body class="no-js">
@@ -29,7 +35,7 @@
       <div class="logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-          <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" class="top-logo">
+          <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" class="top-logo" width="102" height="83">
         </picture>
       </div>
 
@@ -38,8 +44,7 @@
     <!--  Intro -->
 
     <div class="intro intro--small">
-      <img src="img/text-sedona.svg" class="intro__img intro__img--small" alt="Welcome to Sedona">
-
+      <img src="img/text-sedona.svg" class="intro__img intro__img--small" alt="Welcome to Sedona" width="229" height="39">
       <div class="intro__triangle">&nbsp;</div>
     </div>
 
@@ -79,7 +84,7 @@
                 </g>
               </svg>
             </a>
-            1350</div>
+          1350</div>
         </div>
       </div>
 
@@ -107,7 +112,7 @@
                 </g>
               </svg>
             </a>
-            143</div>
+          143</div>
         </div>
       </div>
 
@@ -135,7 +140,7 @@
                 </g>
               </svg>
             </a>
-            96</div>
+        96</div>
         </div>
       </div>
 
@@ -163,7 +168,7 @@
                 </g>
               </svg>
             </a>
-            254</div>
+           254</div>
         </div>
       </div>
     </div>
