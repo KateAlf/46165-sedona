@@ -113,6 +113,32 @@
     left: -45px;
     top: 0;
   }
+  
+  &__radio + .form__label--radio:hover::before {
+     border: 25px solid #e5e5e5;
+     background-color: #e5e5e5;
+  }
+  
+  &__radio:checked + .form__label--radio:hover::before {
+    width: 22px;
+    height: 22px;
+    border: 18px solid #e5e5e5;
+    background-color: #333333;
+    position: absolute;
+    left: -63px;
+    top: -18px;
+  }
+ &__radio:checked + .form__label--radio:active::before {
+    width: 22px;
+    height: 22px;
+    border: 18px solid #e5e5e5;
+    background-color: #a4a4a4;
+    position: absolute;
+    left: -63px;
+    top: -18px;
+  }
+  
+  
   &__checkbox {
     display: none;
   }
@@ -146,6 +172,22 @@
     left: -48px;
     top: 1px;
   }
+  &__checkbox + .form__label--checkbox:hover::before {
+     background-color: #e5e5e5;
+  }
+  
+   &__checkbox + .form__label--checkbox:active::before {
+     background-color: #d5d5d5;
+  }
+  
+  &__checkbox:checked + .form__label--checkbox:active::after {
+  background: url('../img/icon-tick-grey.svg') no-repeat; 
+  }
+  
+
+  
+  
+  
   &__emotions {
     width: 85%;
     min-height: 160px;
