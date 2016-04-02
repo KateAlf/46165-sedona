@@ -29,6 +29,11 @@
     border: 0;
     margin-right: 133px;
     background-color: transparent;
+    outline: none;
+    &:active {
+      fill: #c1c1c1;
+      outline: none;
+    }
   }
   &--subtitles {
     display: block;
@@ -37,6 +42,7 @@
     margin-right: 30px;
     border: 0;
     background-color: transparent;
+    outline: none;
   }
   &--zoom {
     display: block;
@@ -45,6 +51,18 @@
     margin-right: 23px;
     border: 0;
     background-color: transparent;
+    outline: none;
+  }
+  &--zoom:hover,
+  &--subtitles:hover,
+  &--repeat:hover {
+    fill: #333333;
+  }
+  &--zoom:active,
+  &--subtitles:active,
+  &--repeat:active {
+    fill: #c1c1c1;
+    outline: none;
   }
   &--booking {
     width: 87.5%;
