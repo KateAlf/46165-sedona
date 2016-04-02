@@ -3,3 +3,15 @@ fieldset {
   width: 100%;
   padding: 0px;
 }
+input {
+  outline: none;
+}
+
+input:hover {
+  background-color: #e5e5e5;
+}
+
+input:active {
+  background-color: white;
+  outline: 2px solid #e5e5e5;
+}
