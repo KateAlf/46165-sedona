@@ -1,7 +1,7 @@
  @media (min-resolution: 144dpi),
  (min-resolution: 1.5dppx) {
    .promo-video {
-     background-image: url('../img/video-mobile@2x.jpg');
+     background-image: url("../img/video-mobile@2x.jpg");
      background-position: center;
    }
  }
@@ -14,7 +14,7 @@
    flex-wrap: wrap;
    width: 100%;
    min-height: 267px;
-   background: url('../img/video-mobile.jpg') no-repeat;
+   background: url("../img/video-mobile.jpg") no-repeat;
    &__range-filter {
      display: block;
      width: 87.5%;
@@ -63,12 +63,12 @@
  @media #{$tablet-width} {
    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
      .promo-video {
-       background-image: url('../img/video-tablet@2x.jpg');
+       background-image: url("../img/video-tablet@2x.jpg");
        background-position: center;
      }
    }
    .promo-video {
-     background: url('../img/video-tablet.jpg') no-repeat center;
+     background: url("../img/video-tablet.jpg") no-repeat center;
      background-size: 100%;
      min-height: 500px;
      position: relative;
@@ -122,7 +122,7 @@
  @media #{$desktop-width} {
    .promo-video {
      width: 67%;
-     background: url('../img/video-desktop.jpg') no-repeat;
+     background: url("../img/video-desktop.jpg") no-repeat;
      background-size: 100%;
      margin: 52px auto 85px auto;
      &__buttons {
@@ -132,7 +132,7 @@
    @media (min-resolution: 144dpi),
    (min-resolution: 1.5dppx) {
      .promo-video {
-       background-image: url('../img/video-desktop@2x.jpg');
+       background-image: url("../img/video-desktop@2x.jpg");
        background-position: center;
        background-size: 100%;
        margin: 0 auto;

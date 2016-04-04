@@ -1,14 +1,15 @@
 .map {
-  background-image: url('../img/bg-map-mobile.jpg');
+  background-image: url("../img/bg-map-mobile.jpg");
+  background-color: #f3f1ed;
   min-height: 350px;
   position: relative;
-  
+  margin-bottom: 30px;
   &:after {
     display: block;
-    content: '';
+    content: "";
     width: 100%;
     height: 27px;
-    background-image: url('../img/icon-map-marker.svg');
+    background-image: url("../img/icon-map-marker.svg");
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -20,13 +21,12 @@
 
 @media #{$tablet-width} {
   .map {
-   
-    background-image: url('../img/bg-map-tablet.jpg');
+    background-image: url("../img/bg-map-tablet.jpg");
   }
 }
 
 @media #{$desktop-width} {
   .map {
-    background-image: url('../img/bg-map-desktop.jpg');
+    background-image: url("../img/bg-map-desktop.jpg");
   }
 }

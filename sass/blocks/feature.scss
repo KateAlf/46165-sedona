@@ -5,19 +5,18 @@
   align-items: center;
   &--primary {
     background-color: $primary-color;
-    //    min-height: 164px;
   }
   &--secondary {
     background-color: $secondary-color;
   }
   &--icon-home {
-    background: url('../img/icon-house.svg') no-repeat;
+    background: url("../img/icon-house.svg") no-repeat;
   }
   &--icon-food {
-    background: url('../img/icon-burger.svg') no-repeat;
+    background: url("../img/icon-burger.svg") no-repeat;
   }
   &--icon-souvenirs {
-    background: url('../img/icon-gift.svg') no-repeat;
+    background: url("../img/icon-gift.svg") no-repeat;
   }
   &__header {
     @include title;
