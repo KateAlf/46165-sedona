@@ -1,9 +1,11 @@
 .social-links {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   padding-left: 85px;
+  min-height: 50px;
 }
 
 @media #{$mobile-width} {

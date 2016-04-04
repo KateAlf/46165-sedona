@@ -19,14 +19,18 @@
 @media #{$mobile-width} {
   .flex-wrapper--name {
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 0px;
     width: 90%;
   }
   .flex-wrapper--contacts {
     width: 80%;
+    margin-bottom: 20px;
   }
   .flex-wrapper--sights {
     margin-bottom: 20px;
+  }
+  .flex-wrapper--general {
+    margin-bottom: 15px;
   }
 }
 
@@ -63,7 +67,6 @@
   }
   .flex-wrapper--name {
     margin-bottom: 20px;
-    padding-left: 55px;
     width: 90%;
   }
   .flex-wrapper--contacts {
