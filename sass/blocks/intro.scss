@@ -34,7 +34,7 @@
       width: 100%;
       background-position: bottom;
     }
-    &--small .intro__triangle {
+    &--small::after {
       bottom: -20%;
     }
     &__img--small {

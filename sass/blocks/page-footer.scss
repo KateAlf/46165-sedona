@@ -52,6 +52,7 @@
 
 @media #{$desktop-width} {
   .page-footer__copyright {
-    margin-right: 0px;
+    box-sizing: border-box;
+    padding-right: 40px;
   }
 }
