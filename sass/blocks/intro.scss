@@ -57,6 +57,7 @@
 
 @media #{$tablet-width} {
   .intro {
+    width: 100%;
     background-image: url("../img/bg-back-desktop.jpg");
     background-position: center 30%;
     min-height: 518px;
