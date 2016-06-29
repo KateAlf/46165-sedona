@@ -1,7 +1,7 @@
 # Sedona
 **HTML Academy Advanced Intensive Project**
 
-Проект адаптивного сайта турагенства в рамках продвинутого интенсива в <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github.svg"></a>
+Проект адаптивного сайта турагенства в рамках продвинутого интенсива в HTML Academy <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github.svg"></a>
 
 **Особенности**
 
